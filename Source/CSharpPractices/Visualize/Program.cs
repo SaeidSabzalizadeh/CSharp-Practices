@@ -1,5 +1,4 @@
-﻿using MultiThreading;
-using System;
+﻿using System;
 
 namespace Visualize
 {
@@ -11,7 +10,9 @@ namespace Visualize
 
             //MultiThreading.ContextSwitching.Run();
             //MultiThreading.SharedResource.Run();
-            ThreadPoolFeatures.Run();
+            //MultiThreading.ThreadPoolFeatures.Run();
+            //MultiThreading.WaitForThreadCompletion.Run();
+            MultiThreading.ExceptionHandling.Run();
 
             Console.ReadLine();
         }

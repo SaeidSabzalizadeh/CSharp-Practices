@@ -8,12 +8,12 @@ namespace MultiThreading
         public static void Run()
         {
             Thread thread = new Thread(WriteUsingNewThread);
-            thread.Name = "Cazton Worker";
+            thread.Name = "bv Worker";
             //Worker Thread
             thread.Start();
            
             //Main Thread
-            Thread.CurrentThread.Name = "Cazton main";
+            Thread.CurrentThread.Name = "bv main";
             for (int i = 0; i < 1000; i++)
             {
                 Console.Write(" A" + i + " ");
