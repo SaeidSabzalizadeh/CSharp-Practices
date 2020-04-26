@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MultiThreading;
+using System;
 
 namespace Visualize
 {
@@ -8,7 +9,9 @@ namespace Visualize
         {
             Console.WriteLine(".................................");
 
-            MultiThreading.ContextSwitching.Run();
+            //MultiThreading.ContextSwitching.Run();
+            //MultiThreading.SharedResource.Run();
+            ThreadPoolFeatures.Run();
 
             Console.ReadLine();
         }
