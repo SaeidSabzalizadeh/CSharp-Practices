@@ -21,7 +21,9 @@ namespace Visualize
             //MultiThreading.Synchronization.DeadLocks.Run();
             //MultiThreading.Synchronization.ReaderWriterLocks.Run();
             //MultiThreading.Synchronization.ReaderWriterLocks.SecondWay.Run();
-            MultiThreading.Synchronization.MutexFeatures.Run();
+            //MultiThreading.Synchronization.MutexFeatures.Run();
+            MultiThreading.Synchronization.Semaphores.Run();
+
 
 
 
