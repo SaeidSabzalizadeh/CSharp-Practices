@@ -8,11 +8,15 @@ namespace Visualize
         {
             Console.WriteLine(".................................");
 
-            //MultiThreading.ContextSwitching.Run();
-            //MultiThreading.SharedResource.Run();
-            //MultiThreading.ThreadPoolFeatures.Run();
-            //MultiThreading.WaitForThreadCompletion.Run();
-            MultiThreading.ExceptionHandling.Run();
+            //MultiThreading.Threads.ContextSwitching.Run();
+            //MultiThreading.Threads.SharedResource.Run();
+            //MultiThreading.Threads.ThreadPoolFeatures.Run();
+            //MultiThreading.Threads.WaitForThreadCompletion.Run();
+            //MultiThreading.Threads.ExceptionHandling.Run();
+
+            //MultiThreading.Tasks.TaskFeatures.Run();
+            //MultiThreading.Tasks.TaskIO.Run();
+            MultiThreading.Tasks.TaskContinuation.Run();
 
             Console.ReadLine();
         }

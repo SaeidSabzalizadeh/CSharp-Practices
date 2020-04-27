@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace MultiThreading
+namespace MultiThreading.Threads
 {
     public class ContextSwitching
     {
