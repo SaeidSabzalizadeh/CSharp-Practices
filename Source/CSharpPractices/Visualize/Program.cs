@@ -22,7 +22,11 @@ namespace Visualize
             //MultiThreading.Synchronization.ReaderWriterLocks.Run();
             //MultiThreading.Synchronization.ReaderWriterLocks.SecondWay.Run();
             //MultiThreading.Synchronization.MutexFeatures.Run();
-            MultiThreading.Synchronization.Semaphores.Run();
+            //MultiThreading.Synchronization.Semaphores.Run();
+            //MultiThreading.Signaling.AutoResteEventFeatures.Run();
+            //MultiThreading.Signaling.TwoWaySignaling.Run();
+            //MultiThreading.Signaling.ManualResteEventFeatures.Run();
+            MultiThreading.Signaling.CountdownEventFeatures.Run();
 
 
 
