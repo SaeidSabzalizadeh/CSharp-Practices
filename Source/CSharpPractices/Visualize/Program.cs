@@ -31,7 +31,14 @@ namespace Visualize
             //MultiThreading.TPL.ParallelForeachModifyPictures.Run();
             //MultiThreading.TPL.Cancellation.Run();
             //MultiThreading.TPL.TaskContinuationWithState.Run();
-            MultiThreading.TPL.TaskCompletionSourceFeatures.Run();
+            //MultiThreading.TPL.TaskCompletionSourceFeatures.Run();
+
+            //MultiThreading.PLINQ.SimplePLINQ.Run();
+            //MultiThreading.PLINQ.WithDegreeOfParallelism.Run();
+            MultiThreading.PLINQ.ConcurrencyBag.Run();
+
+
+
 
 
 
