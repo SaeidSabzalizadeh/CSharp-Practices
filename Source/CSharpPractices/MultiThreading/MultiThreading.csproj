@@ -4,4 +4,26 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="TPL\Pictures\Photo1.jpg" />
+    <None Remove="TPL\Pictures\Photo2.jpg" />
+    <None Remove="TPL\Pictures\Photo3.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="TPL\Pictures\Photo1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TPL\Pictures\Photo2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TPL\Pictures\Photo3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+  </ItemGroup>
+
 </Project>

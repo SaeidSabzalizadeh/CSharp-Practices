@@ -26,7 +26,17 @@ namespace Visualize
             //MultiThreading.Signaling.AutoResteEventFeatures.Run();
             //MultiThreading.Signaling.TwoWaySignaling.Run();
             //MultiThreading.Signaling.ManualResteEventFeatures.Run();
-            MultiThreading.Signaling.CountdownEventFeatures.Run();
+            //MultiThreading.Signaling.CountdownEventFeatures.Run();
+            //MultiThreading.TPL.ParallelFor.Run();
+            //MultiThreading.TPL.ParallelForeachModifyPictures.Run();
+            //MultiThreading.TPL.Cancellation.Run();
+            //MultiThreading.TPL.TaskContinuationWithState.Run();
+            MultiThreading.TPL.TaskCompletionSourceFeatures.Run();
+
+
+
+
+
 
 
 
