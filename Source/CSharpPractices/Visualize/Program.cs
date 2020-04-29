@@ -8,6 +8,7 @@ namespace Visualize
         {
             Console.WriteLine(".................................");
 
+
             //MultiThreading.Threads.ContextSwitching.Run();
             //MultiThreading.Threads.SharedResource.Run();
             //MultiThreading.Threads.ThreadPoolFeatures.Run();
@@ -17,16 +18,19 @@ namespace Visualize
             //MultiThreading.Tasks.TaskFeatures.Run();
             //MultiThreading.Tasks.TaskIO.Run();
             //MultiThreading.Tasks.TaskContinuation.Run();
+
             //MultiThreading.Synchronization.Monitors.Run();
             //MultiThreading.Synchronization.DeadLocks.Run();
             //MultiThreading.Synchronization.ReaderWriterLocks.Run();
             //MultiThreading.Synchronization.ReaderWriterLocks.SecondWay.Run();
             //MultiThreading.Synchronization.MutexFeatures.Run();
             //MultiThreading.Synchronization.Semaphores.Run();
+
             //MultiThreading.Signaling.AutoResteEventFeatures.Run();
             //MultiThreading.Signaling.TwoWaySignaling.Run();
             //MultiThreading.Signaling.ManualResteEventFeatures.Run();
             //MultiThreading.Signaling.CountdownEventFeatures.Run();
+
             //MultiThreading.TPL.ParallelFor.Run();
             //MultiThreading.TPL.ParallelForeachModifyPictures.Run();
             //MultiThreading.TPL.Cancellation.Run();
@@ -35,13 +39,9 @@ namespace Visualize
 
             //MultiThreading.PLINQ.SimplePLINQ.Run();
             //MultiThreading.PLINQ.WithDegreeOfParallelism.Run();
-            MultiThreading.PLINQ.ConcurrencyBag.Run();
+            //MultiThreading.PLINQ.ConcurrencyBag.Run();
 
-
-
-
-
-
+            MultiThreading.TAP.AsyncFeatures.Run();
 
 
 
