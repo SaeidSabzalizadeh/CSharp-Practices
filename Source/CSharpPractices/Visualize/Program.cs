@@ -44,10 +44,6 @@ namespace Visualize
             MultiThreading.TAP.AsyncFeatures.Run();
 
 
-
-
-
-
             Console.ReadLine();
         }
     }
