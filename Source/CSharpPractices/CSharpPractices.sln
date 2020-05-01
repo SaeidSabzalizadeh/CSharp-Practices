@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Visualize", "Visualize\Visu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncProgrammingTest.NetFramework", "AsyncProgrammingTest.NetFramework\AsyncProgrammingTest.NetFramework.csproj", "{B811CC38-5435-4A3E-AA05-68E30C572B97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncProgrammingTest.NetCore", "AsyncProgrammingTest.NetCore\AsyncProgrammingTest.NetCore.csproj", "{7A55717D-71E3-4844-8C43-36037700C3D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncProgrammingTest.NetCore", "AsyncProgrammingTest.NetCore\AsyncProgrammingTest.NetCore.csproj", "{7A55717D-71E3-4844-8C43-36037700C3D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterviewQuestions", "InterviewQuestions\InterviewQuestions.csproj", "{6D10BBE2-65F3-4E9B-B968-2C9987C0736F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{7A55717D-71E3-4844-8C43-36037700C3D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A55717D-71E3-4844-8C43-36037700C3D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A55717D-71E3-4844-8C43-36037700C3D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D10BBE2-65F3-4E9B-B968-2C9987C0736F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D10BBE2-65F3-4E9B-B968-2C9987C0736F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D10BBE2-65F3-4E9B-B968-2C9987C0736F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D10BBE2-65F3-4E9B-B968-2C9987C0736F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\InterviewQuestions\InterviewQuestions.csproj" />
     <ProjectReference Include="..\MultiThreading\MultiThreading.csproj" />
   </ItemGroup>
 

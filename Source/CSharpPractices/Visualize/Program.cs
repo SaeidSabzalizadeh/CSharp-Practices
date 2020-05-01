@@ -41,7 +41,9 @@ namespace Visualize
             //MultiThreading.PLINQ.WithDegreeOfParallelism.Run();
             //MultiThreading.PLINQ.ConcurrencyBag.Run();
 
-            MultiThreading.TAP.AsyncFeatures.Run();
+            //MultiThreading.TAP.AsyncFeatures.Run();
+
+            InterviewQuestions.RecursiveReverseString.Run();
 
 
             Console.ReadLine();

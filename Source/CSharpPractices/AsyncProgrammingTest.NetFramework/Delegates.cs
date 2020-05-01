@@ -77,15 +77,53 @@ namespace AsyncProgrammingTest.NetFramework
 
         }
 
+
+
+        [TestMethod]
+        public void TestDelegates_Phase5()
+        {
+            Log("Start TestDelegates");
+
+            DoSomethingDelegate somethingDelegate = new DoSomethingDelegate(DoSomethingElse);
+
+            var result = somethingDelegate.BeginInvoke(CallBack, somethingDelegate);
+            Thread.Sleep(100);
+            Log("Meantime in TestDelegates");
+
+            result.AsyncWaitHandle.WaitOne();
+
+            Log("End TestDelegates");
+
+        }
+
         private void CallBack(IAsyncResult asyncResult)
         {
-            Log("CallBack Doing something .....");
-            var somethingDelegate = asyncResult.AsyncState as DoSomethingDelegate;
-            Thread.Sleep(500);
-            somethingDelegate.EndInvoke(asyncResult);
-            Thread.Sleep(500);
-            Log("End of Doing something .....");
+            try
+            {
+
+                Log("CallBack Doing something .....");
+                var somethingDelegate = asyncResult.AsyncState as DoSomethingDelegate;
+                Thread.Sleep(500);
+                somethingDelegate.EndInvoke(asyncResult);
+                Thread.Sleep(500);
+                Log("End of Doing something .....");
+
+            }
+            catch (Exception ex)
+            {
+                Log($"Catch Exception in CallBack: {ex.Message}");
+            }
+
         }
+
+        private void DoSomethingElse()
+        {
+            Thread.Sleep(500);
+            Log("Doing something else .....");
+            throw new Exception("DoSomethingElse exception");
+        }
+
+        
 
         private void DoSomething()
         {
