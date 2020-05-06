@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace Visualize
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             Console.WriteLine(".................................");
 
@@ -46,7 +47,9 @@ namespace Visualize
 
             //MultiThreading.ConcurrentCollections.ConcurrentQueueFeatures.Run();
             //MultiThreading.ConcurrentCollections.ConcurrentDictionaryFeatures.Run();
-            MultiThreading.ConcurrentCollections.ProducerConsumerPattern.Run();
+            //MultiThreading.ConcurrentCollections.ProducerConsumerPattern.Run();
+
+           await new MultiThreading.AsyncProgramming.Test().Run();
 
 
             //InterviewQuestions.RecursiveReverseString.Run();
