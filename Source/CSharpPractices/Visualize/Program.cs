@@ -43,7 +43,15 @@ namespace Visualize
 
             //MultiThreading.TAP.AsyncFeatures.Run();
 
-            InterviewQuestions.RecursiveReverseString.Run();
+
+            //MultiThreading.ConcurrentCollections.ConcurrentQueueFeatures.Run();
+            //MultiThreading.ConcurrentCollections.ConcurrentDictionaryFeatures.Run();
+            MultiThreading.ConcurrentCollections.ProducerConsumerPattern.Run();
+
+
+            //InterviewQuestions.RecursiveReverseString.Run();
+            //InterviewQuestions.FizzBuzz.Run();
+
 
 
             Console.ReadLine();
