@@ -48,7 +48,7 @@ namespace MultiThreading
 
         private static string GetLogPrefix()
         {
-            return $"{(Task.CurrentId.HasValue ? $"Task[{(Task.CurrentId.Value > 9 ? $"{Task.CurrentId.Value}" : $"0{Task.CurrentId.Value}")}] | " : "")}Thread[{(Thread.CurrentThread.ManagedThreadId > 9 ? $"{Thread.CurrentThread.ManagedThreadId}" : $"0{Thread.CurrentThread.ManagedThreadId}")}] - {DateTime.Now:mm:ss.fffff}";
+            return $"{DateTime.Now:mm:ss.fffff} - Thread[{(Thread.CurrentThread.ManagedThreadId > 9 ? $"{Thread.CurrentThread.ManagedThreadId}" : $"0{Thread.CurrentThread.ManagedThreadId}")}]{(Task.CurrentId.HasValue ? $" | Task[{(Task.CurrentId.Value > 9 ? $"{Task.CurrentId.Value}" : $"0{Task.CurrentId.Value}")}]" : "           ")}";
 
         }
 

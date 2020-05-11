@@ -15,18 +15,32 @@ namespace MultiThreading.Tasks
             Task<string> taskThatReturns = new Task<string>(MethodThatReturns);
             taskThatReturns.Start();
             taskThatReturns.Wait();
-            Console.WriteLine(taskThatReturns.Result);
+            Helper.LogConsole(taskThatReturns.Result);
+
+            Task<string> taskThatReturns2 = new Task<string>(()=> 
+            {
+                Helper.LogConsole("ManualMethodThatReturns: Hello World");
+                Thread.Sleep(1000);
+                return "ManualHello";
+            });
+            taskThatReturns2.Start();
+            taskThatReturns2.Wait();
+            Helper.LogConsole(taskThatReturns2.Result);
+
+
+
         }
 
         private static string MethodThatReturns()
         {
+            Helper.LogConsole("MethodThatReturns: Hello World");
             Thread.Sleep(1000);
             return "Hello";
         }
 
         private static void SimpleMethod()
         {
-            Console.WriteLine("Hello World");
+            Helper.LogConsole("SimpleMethod: Hello World");
         }
 
     }

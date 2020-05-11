@@ -49,7 +49,9 @@ namespace Visualize
             //MultiThreading.ConcurrentCollections.ConcurrentDictionaryFeatures.Run();
             //MultiThreading.ConcurrentCollections.ProducerConsumerPattern.Run();
 
-           await new MultiThreading.AsyncProgramming.Test().Run();
+            //MultiThreading.AsyncProgramming.AsynAwait.Run2();
+            await new MultiThreading.AsyncProgramming.AsynAwait().Run();
+
 
 
             //InterviewQuestions.RecursiveReverseString.Run();
