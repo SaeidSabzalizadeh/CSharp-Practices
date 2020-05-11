@@ -50,12 +50,14 @@ namespace Visualize
             //MultiThreading.ConcurrentCollections.ProducerConsumerPattern.Run();
 
             //MultiThreading.AsyncProgramming.AsynAwait.Run2();
-            await new MultiThreading.AsyncProgramming.AsynAwait().Run();
+            //await new MultiThreading.AsyncProgramming.AsynAwait().Run();
 
 
 
             //InterviewQuestions.RecursiveReverseString.Run();
             //InterviewQuestions.FizzBuzz.Run();
+            InterviewQuestions.ReorderList.Run();
+            InterviewQuestions.PopularFeatures.Run();
 
 
 
