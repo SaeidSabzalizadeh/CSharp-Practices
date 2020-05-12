@@ -56,8 +56,12 @@ namespace Visualize
 
             //InterviewQuestions.RecursiveReverseString.Run();
             //InterviewQuestions.FizzBuzz.Run();
-            InterviewQuestions.ReorderList.Run();
-            InterviewQuestions.PopularFeatures.Run();
+            //InterviewQuestions.ReorderList.Run();
+            //InterviewQuestions.PopularFeatures.Run();
+            //InterviewQuestions.OverlapRectangles.Run();
+            //InterviewQuestions.PalindromeString.Run();
+            InterviewQuestions.IntersectionRectangle.Run();
+
 
 
 
