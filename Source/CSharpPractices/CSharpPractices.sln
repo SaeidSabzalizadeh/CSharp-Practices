@@ -7,11 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiThreading", "MultiThre
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Visualize", "Visualize\Visualize.csproj", "{91B6D120-641B-4B96-B0B7-436BAB67C174}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncProgrammingTest.NetFramework", "AsyncProgrammingTest.NetFramework\AsyncProgrammingTest.NetFramework.csproj", "{B811CC38-5435-4A3E-AA05-68E30C572B97}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingTest.NetFramework", "AsyncProgrammingTest.NetFramework\ProgrammingTest.NetFramework.csproj", "{B811CC38-5435-4A3E-AA05-68E30C572B97}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncProgrammingTest.NetCore", "AsyncProgrammingTest.NetCore\AsyncProgrammingTest.NetCore.csproj", "{7A55717D-71E3-4844-8C43-36037700C3D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProgrammingTest.NetCore", "AsyncProgrammingTest.NetCore\ProgrammingTest.NetCore.csproj", "{7A55717D-71E3-4844-8C43-36037700C3D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterviewQuestions", "InterviewQuestions\InterviewQuestions.csproj", "{6D10BBE2-65F3-4E9B-B968-2C9987C0736F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterviewQuestions", "InterviewQuestions\InterviewQuestions.csproj", "{6D10BBE2-65F3-4E9B-B968-2C9987C0736F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
