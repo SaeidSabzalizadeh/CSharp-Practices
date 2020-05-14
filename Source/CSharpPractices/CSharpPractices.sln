@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessMoves", "OOPByChess\Ch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessMovesTests", "OOPByChess\ChessMovesTests\ChessMovesTests.csproj", "{6F7D0A83-2256-411F-A01F-450C195DC004}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OOPBySocialMedia", "OOPBySocialMedia", "{E2095176-BC15-4470-A6A4-E05402AC4F74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialMediaTests", "OOPBySocialMedia\SocialMediaTests\SocialMediaTests.csproj", "{6AFBF44A-5FAF-4572-89BC-BC3EB1148501}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,10 @@ Global
 		{6F7D0A83-2256-411F-A01F-450C195DC004}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F7D0A83-2256-411F-A01F-450C195DC004}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F7D0A83-2256-411F-A01F-450C195DC004}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AFBF44A-5FAF-4572-89BC-BC3EB1148501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AFBF44A-5FAF-4572-89BC-BC3EB1148501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AFBF44A-5FAF-4572-89BC-BC3EB1148501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AFBF44A-5FAF-4572-89BC-BC3EB1148501}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,6 +88,7 @@ Global
 		{A73A6826-E3EB-489C-AC06-0005E3D3C08A} = {660D5C54-A3B5-472D-8599-A792453654C5}
 		{B2F04576-5B76-4563-9D20-B43A8533934B} = {A73A6826-E3EB-489C-AC06-0005E3D3C08A}
 		{6F7D0A83-2256-411F-A01F-450C195DC004} = {A73A6826-E3EB-489C-AC06-0005E3D3C08A}
+		{6AFBF44A-5FAF-4572-89BC-BC3EB1148501} = {E2095176-BC15-4470-A6A4-E05402AC4F74}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {283376F5-2404-4A5C-A841-483D40051866}
