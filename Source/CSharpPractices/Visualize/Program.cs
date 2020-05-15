@@ -49,7 +49,6 @@ namespace Visualize
             //MultiThreading.ConcurrentCollections.ConcurrentDictionaryFeatures.Run();
             //MultiThreading.ConcurrentCollections.ProducerConsumerPattern.Run();
 
-            //MultiThreading.AsyncProgramming.AsynAwait.Run2();
             //await new MultiThreading.AsyncProgramming.AsynAwait().Run();
 
 
@@ -60,7 +59,7 @@ namespace Visualize
             //InterviewQuestions.PopularFeatures.Run();
             //InterviewQuestions.OverlapRectangles.Run();
             //InterviewQuestions.PalindromeString.Run();
-            InterviewQuestions.IntersectionRectangle.Run();
+            //InterviewQuestions.IntersectionRectangle.Run();
 
 
 
