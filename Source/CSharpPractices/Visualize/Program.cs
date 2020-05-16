@@ -60,7 +60,8 @@ namespace Visualize
             //InterviewQuestions.OverlapRectangles.Run();
             //InterviewQuestions.PalindromeString.Run();
             //InterviewQuestions.IntersectionRectangle.Run();
-
+            InterviewQuestions.IncreasingSubsequence.Run();
+            //InterviewQuestions.ReadWebRequest.Run();
 
 
 
