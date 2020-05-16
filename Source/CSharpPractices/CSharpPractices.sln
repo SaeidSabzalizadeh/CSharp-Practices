@@ -11,25 +11,29 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingTest.NetFramewor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProgrammingTest.NetCore", "AsyncProgrammingTest.NetCore\ProgrammingTest.NetCore.csproj", "{7A55717D-71E3-4844-8C43-36037700C3D0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterviewQuestions", "InterviewQuestions\InterviewQuestions.csproj", "{6D10BBE2-65F3-4E9B-B968-2C9987C0736F}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OOPByChess", "OOPByChess", "{660D5C54-A3B5-472D-8599-A792453654C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessCore", "OOPByChess\ChessCore\ChessCore.csproj", "{5751A394-1CD7-44F2-B7BB-1D626DDBEAA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChessCore", "OOPByChess\ChessCore\ChessCore.csproj", "{5751A394-1CD7-44F2-B7BB-1D626DDBEAA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessTests", "OOPByChess\Chess.Tests\ChessTests.csproj", "{D9A88DC8-6035-4658-BEDE-8816C3A16436}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChessTests", "OOPByChess\Chess.Tests\ChessTests.csproj", "{D9A88DC8-6035-4658-BEDE-8816C3A16436}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model-Centeric", "Model-Centeric", "{F2E46D69-4E31-4FE8-9C92-D2B3EB035B16}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Move-Centeric", "Move-Centeric", "{A73A6826-E3EB-489C-AC06-0005E3D3C08A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessMoves", "OOPByChess\ChessMoves\ChessMoves.csproj", "{B2F04576-5B76-4563-9D20-B43A8533934B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChessMoves", "OOPByChess\ChessMoves\ChessMoves.csproj", "{B2F04576-5B76-4563-9D20-B43A8533934B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessMovesTests", "OOPByChess\ChessMovesTests\ChessMovesTests.csproj", "{6F7D0A83-2256-411F-A01F-450C195DC004}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChessMovesTests", "OOPByChess\ChessMovesTests\ChessMovesTests.csproj", "{6F7D0A83-2256-411F-A01F-450C195DC004}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OOPBySocialMedia", "OOPBySocialMedia", "{E2095176-BC15-4470-A6A4-E05402AC4F74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialMediaTests", "OOPBySocialMedia\SocialMediaTests\SocialMediaTests.csproj", "{6AFBF44A-5FAF-4572-89BC-BC3EB1148501}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialMediaTests", "OOPBySocialMedia\SocialMediaTests\SocialMediaTests.csproj", "{6AFBF44A-5FAF-4572-89BC-BC3EB1148501}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenges.Library", "Challenges\Challenges.Library\Challenges.Library.csproj", "{4A0D558A-27FF-4F06-BFE3-6EF50FA87688}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Challenges", "Challenges", "{475255B3-A1C1-4C90-A24D-FAF3C71FFABD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenges.Tests", "Challenges\Challenges.Tests\Challenges.Tests.csproj", "{C5729AA7-2484-43BE-8E3C-63BF3CF23CC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,10 +57,6 @@ Global
 		{7A55717D-71E3-4844-8C43-36037700C3D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A55717D-71E3-4844-8C43-36037700C3D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A55717D-71E3-4844-8C43-36037700C3D0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6D10BBE2-65F3-4E9B-B968-2C9987C0736F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6D10BBE2-65F3-4E9B-B968-2C9987C0736F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6D10BBE2-65F3-4E9B-B968-2C9987C0736F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6D10BBE2-65F3-4E9B-B968-2C9987C0736F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5751A394-1CD7-44F2-B7BB-1D626DDBEAA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5751A394-1CD7-44F2-B7BB-1D626DDBEAA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5751A394-1CD7-44F2-B7BB-1D626DDBEAA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -77,6 +77,14 @@ Global
 		{6AFBF44A-5FAF-4572-89BC-BC3EB1148501}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AFBF44A-5FAF-4572-89BC-BC3EB1148501}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AFBF44A-5FAF-4572-89BC-BC3EB1148501}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A0D558A-27FF-4F06-BFE3-6EF50FA87688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A0D558A-27FF-4F06-BFE3-6EF50FA87688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A0D558A-27FF-4F06-BFE3-6EF50FA87688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A0D558A-27FF-4F06-BFE3-6EF50FA87688}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5729AA7-2484-43BE-8E3C-63BF3CF23CC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5729AA7-2484-43BE-8E3C-63BF3CF23CC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5729AA7-2484-43BE-8E3C-63BF3CF23CC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5729AA7-2484-43BE-8E3C-63BF3CF23CC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -89,6 +97,8 @@ Global
 		{B2F04576-5B76-4563-9D20-B43A8533934B} = {A73A6826-E3EB-489C-AC06-0005E3D3C08A}
 		{6F7D0A83-2256-411F-A01F-450C195DC004} = {A73A6826-E3EB-489C-AC06-0005E3D3C08A}
 		{6AFBF44A-5FAF-4572-89BC-BC3EB1148501} = {E2095176-BC15-4470-A6A4-E05402AC4F74}
+		{4A0D558A-27FF-4F06-BFE3-6EF50FA87688} = {475255B3-A1C1-4C90-A24D-FAF3C71FFABD}
+		{C5729AA7-2484-43BE-8E3C-63BF3CF23CC7} = {475255B3-A1C1-4C90-A24D-FAF3C71FFABD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {283376F5-2404-4A5C-A841-483D40051866}

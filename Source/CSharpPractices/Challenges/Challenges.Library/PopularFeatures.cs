@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace InterviewQuestions
+namespace Challenges.Library
 {
     public class PopularFeatures
     {

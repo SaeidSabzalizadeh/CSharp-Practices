@@ -15,7 +15,7 @@ using System.Net;
 using Newtonsoft.Json;
 
 
-namespace InterviewQuestions
+namespace Challenges.Library
 {
     public class ReadWebRequest
     {

@@ -53,15 +53,17 @@ namespace Visualize
 
 
 
-            //InterviewQuestions.RecursiveReverseString.Run();
-            //InterviewQuestions.FizzBuzz.Run();
-            //InterviewQuestions.ReorderList.Run();
-            //InterviewQuestions.PopularFeatures.Run();
-            //InterviewQuestions.OverlapRectangles.Run();
-            //InterviewQuestions.PalindromeString.Run();
-            //InterviewQuestions.IntersectionRectangle.Run();
-            InterviewQuestions.IncreasingSubsequence.Run();
-            //InterviewQuestions.ReadWebRequest.Run();
+            //Challenges.Library.RecursiveReverseString.Run();
+            //Challenges.Library.FizzBuzz.Run();
+            //Challenges.Library.ReorderList.Run();
+            //Challenges.Library.PopularFeatures.Run();
+            //Challenges.Library.OverlapRectangles.Run();
+            //Challenges.Library.PalindromeString.Run();
+            //Challenges.Library.IntersectionRectangle.Run();
+            //Challenges.Library.IncreasingSubsequence.Run();
+            //Challenges.Library.ReadWebRequest.Run();
+
+            Challenges.Library.LongestIncreasingSubsequence.Run();
 
 
 

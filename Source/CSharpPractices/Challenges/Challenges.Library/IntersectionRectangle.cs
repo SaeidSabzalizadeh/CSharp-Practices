@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace InterviewQuestions
+namespace Challenges.Library
 {
     public class IntersectionRectangle
     {
