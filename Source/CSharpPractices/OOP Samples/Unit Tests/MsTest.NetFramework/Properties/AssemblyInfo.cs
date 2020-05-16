@@ -2,18 +2,18 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("AsyncProgrammingTest.NetFramework")]
+[assembly: AssemblyTitle("MsTest.NetFramework")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("AsyncProgrammingTest.NetFramework")]
+[assembly: AssemblyProduct("MsTest.NetFramework")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 [assembly: ComVisible(false)]
 
-[assembly: Guid("b811cc38-5435-4a3e-aa05-68e30c572b97")]
+[assembly: Guid("b332704c-eef2-4f11-860e-9d1a66363b63")]
 
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]

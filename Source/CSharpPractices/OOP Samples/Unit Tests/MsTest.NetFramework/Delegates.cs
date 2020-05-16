@@ -1,10 +1,10 @@
-﻿using System;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace AsyncProgrammingTest.NetFramework
+namespace MSTest.NetFramework
 {
     [TestClass]
     public class Delegates
@@ -45,7 +45,6 @@ namespace AsyncProgrammingTest.NetFramework
 
         }
 
-
         [TestMethod]
         public void TestDelegates_Phase3()
         {
@@ -76,8 +75,6 @@ namespace AsyncProgrammingTest.NetFramework
             Log("End TestDelegates");
 
         }
-
-
 
         [TestMethod]
         public void TestDelegates_Phase5()

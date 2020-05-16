@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using Xunit;
 
-namespace ProgrammingTest.NetCore
+namespace XUnitTest.NetCore
 {
     public class IEnumerableFeatures
     {
