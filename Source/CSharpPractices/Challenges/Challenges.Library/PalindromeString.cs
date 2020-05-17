@@ -12,13 +12,7 @@ namespace Challenges.Library
             GetPalindromeResultof("abSbba");
         }
 
-        private static void GetPalindromeResultof(string input)
-        {
-            Console.WriteLine();
-            Console.WriteLine($" '{input}' {(IsStringAPalindrome(input) ? "Is Palindrome" : "Is not Palindrome")}");
-        }
-
-        private static bool IsStringAPalindrome(string input)
+        public static bool IsPalindromeRecursive(string input)
         {
             if (string.IsNullOrEmpty(input))
                 return false;
@@ -31,12 +25,36 @@ namespace Challenges.Library
                 if (input.Length == 2)
                     return true;
 
-                return IsStringAPalindrome(input.Substring(1, input.Length - 2));
+                return IsPalindromeRecursive(input.Substring(1, input.Length - 2));
             }
-
 
             return false;
         }
+
+        public static bool IsPalindrome(string input)
+        {
+            if (string.IsNullOrEmpty(input))
+                return true;
+            
+            int length = input.Length;
+            int half = length >> 1;
+
+            for (int i = 0; i < half; i++)
+            {
+                if (input[i] != input[length - 1 - i])
+                    return false;
+            }
+
+            return true;
+        }
+
+
+        private static void GetPalindromeResultof(string input)
+        {
+            Console.WriteLine();
+            Console.WriteLine($" '{input}' {(IsPalindrome(input) ? "Is Palindrome" : "Is not Palindrome")}");
+        }
+
 
     }
 }
