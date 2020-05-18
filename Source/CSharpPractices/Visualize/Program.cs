@@ -58,12 +58,14 @@ namespace Visualize
             //Challenges.Library.ReorderList.Run();
             //Challenges.Library.PopularFeatures.Run();
             //Challenges.Library.OverlapRectangles.Run();
-            Challenges.Library.PalindromeString.Run();
+            //Challenges.Library.PalindromeString.Run();
             //Challenges.Library.IntersectionRectangle.Run();
             //Challenges.Library.IncreasingSubsequence.Run();
             //Challenges.Library.ReadWebRequest.Run();
             //Challenges.Library.LongestIncreasingSubsequence.Run();
 
+
+            CSharp.Operators.Run();
 
 
             Console.ReadLine();

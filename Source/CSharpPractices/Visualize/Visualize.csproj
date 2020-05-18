@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Challenges\Challenges.Library\Challenges.Library.csproj" />
+    <ProjectReference Include="..\CSharp\CSharp.csproj" />
     <ProjectReference Include="..\MultiThreading\MultiThreading.csproj" />
   </ItemGroup>
 
