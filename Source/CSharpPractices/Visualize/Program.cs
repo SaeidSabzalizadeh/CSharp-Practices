@@ -7,8 +7,7 @@ namespace Visualize
     {
         static async Task Main(string[] args)
         {
-            Console.WriteLine(".................................");
-
+            Console.WriteLine();
 
             //MultiThreading.Threads.ContextSwitching.Run();
             //MultiThreading.Threads.SharedResource.Run();
@@ -65,7 +64,7 @@ namespace Visualize
             //Challenges.Library.LongestIncreasingSubsequence.Run();
 
 
-            CSharp.Operators.Run();
+            CSharp.BitWiseOperators.Run();
 
 
             Console.ReadLine();

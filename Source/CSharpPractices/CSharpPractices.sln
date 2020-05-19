@@ -39,7 +39,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsTest.NetFramework", "OOP 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTest.NetCore", "OOP Samples\Unit Tests\XUnitTest.NetCore\XUnitTest.NetCore.csproj", "{8CD227A4-7669-4C31-8EFE-6EA96C260818}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp", "CSharp\CSharp.csproj", "{DA418FC0-6C34-4234-8EDA-1FB5D6A3D396}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp", "CSharp\CSharp.csproj", "{DA418FC0-6C34-4234-8EDA-1FB5D6A3D396}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helper", "Helper\Helper.csproj", "{D3B97DD1-F768-450F-964D-EBFF9F1CAA13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,6 +97,10 @@ Global
 		{DA418FC0-6C34-4234-8EDA-1FB5D6A3D396}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA418FC0-6C34-4234-8EDA-1FB5D6A3D396}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA418FC0-6C34-4234-8EDA-1FB5D6A3D396}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3B97DD1-F768-450F-964D-EBFF9F1CAA13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3B97DD1-F768-450F-964D-EBFF9F1CAA13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3B97DD1-F768-450F-964D-EBFF9F1CAA13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3B97DD1-F768-450F-964D-EBFF9F1CAA13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
