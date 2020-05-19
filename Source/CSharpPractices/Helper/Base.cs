@@ -4,7 +4,7 @@ namespace Helper
 {
     public static class Base
     {
-        const int totalTitleLength = 100;
+        const int TotalTitleLength = 100;
         public static void Start(Type classType)
         {
             SetPads($" START {classType.Name} ");
@@ -26,6 +26,12 @@ namespace Helper
         {
             Console.WriteLine();
         }
+        public static void AddNewSection(string content)
+        {
+            Console.WriteLine();
+            SetPads($"  {content} ", TotalTitleLength / 2);
+            Console.WriteLine();
+        }
 
         public static string GetBase2WellFormed(string content)
         {
@@ -38,7 +44,7 @@ namespace Helper
             return $"{content.Substring(0, 4)}_{GetBase2WellFormed(content.Substring(4))}";
         }
 
-        private static void SetPads(string content)
+        private static void SetPads(string content, int totalTitleLength = TotalTitleLength)
         {
             int padRightLength = (totalTitleLength + content.Length) / 2;
             Console.WriteLine($" {content.PadRight(padRightLength, '-').PadLeft(totalTitleLength, '-')}");
