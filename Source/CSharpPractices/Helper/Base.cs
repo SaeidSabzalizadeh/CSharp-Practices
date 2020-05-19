@@ -22,6 +22,12 @@ namespace Helper
             Console.WriteLine($"  - {content}");
         }
 
+        public static void AddItem(string leftContent, object mainContent, int padLength = 25)
+        {
+            AddItem($"{GetLeftPad(padLength, leftContent)} {mainContent}");
+        }
+
+
         public static void AddNewSection()
         {
             Console.WriteLine();
@@ -42,6 +48,11 @@ namespace Helper
                 return content;
 
             return $"{content.Substring(0, 4)}_{GetBase2WellFormed(content.Substring(4))}";
+        }
+
+        private static string GetLeftPad(int padLength, string content)
+        {
+            return content.PadLeft(padLength, ' ');
         }
 
         private static void SetPads(string content, int totalTitleLength = TotalTitleLength)

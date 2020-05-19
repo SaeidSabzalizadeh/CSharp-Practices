@@ -37,7 +37,7 @@ namespace Challenges.Library
                 return true;
             
             int length = input.Length;
-            int half = length >> 1;
+            int half = length / 2;
 
             for (int i = 0; i < half; i++)
             {
