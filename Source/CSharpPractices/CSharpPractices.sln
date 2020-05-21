@@ -41,7 +41,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTest.NetCore", "OOP Sa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp", "CSharp\CSharp.csproj", "{DA418FC0-6C34-4234-8EDA-1FB5D6A3D396}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helper", "Helper\Helper.csproj", "{D3B97DD1-F768-450F-964D-EBFF9F1CAA13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Helper", "Helper\Helper.csproj", "{D3B97DD1-F768-450F-964D-EBFF9F1CAA13}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{04B59AF7-FA2D-40FF-BF48-0FC9C05FA654}"
+	ProjectSection(SolutionItems) = preProject
+		Technical Stack.txt = Technical Stack.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,6 @@
+Data Structures: LinkedLists, Trees, Tries, HashMaps, HashSets, Arrays, Stacks, Queues, Graphs
+Sorts: Quick Sort, Merge Sort, Insertion Sort, Bucket Sort
+Searches: Binary Search, Depth First Search, Breadth First Search
+Algorithms: Greedy Algorithms, Dynamic Programming, Divide and Conquer
+Bit-wise Operators
+Big O notations
