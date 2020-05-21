@@ -21,5 +21,14 @@ namespace Challenges.Tests
             var result = Library.LeetCode.FirstUniqueCharacter.FirstUniqCharII(input);
             Assert.True(result == expectedResult, $"FirstUniqueCharacterII does not meet the expected. Solution result is '{result}' but expected is '{expectedResult}' for: '{input}'");
         }
+
+        [Theory]
+        [InlineData("leetcode", 0)]
+        [InlineData("loveleetcode", 2)]
+        public void ValidNumberComplementIII(string input, int expectedResult)
+        {
+            var result = Library.LeetCode.FirstUniqueCharacter.FirstUniqCharIII(input);
+            Assert.True(result == expectedResult, $"FirstUniqCharIII does not meet the expected. Solution result is '{result}' but expected is '{expectedResult}' for: '{input}'");
+        }
     }
 }

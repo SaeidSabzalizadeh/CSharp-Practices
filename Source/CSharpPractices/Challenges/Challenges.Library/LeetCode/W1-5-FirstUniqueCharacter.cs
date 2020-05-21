@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Challenges.Library.LeetCode
 {
@@ -22,10 +21,11 @@ namespace Challenges.Library.LeetCode
         {
             Helper.Base.Start(typeof(FirstUniqueCharacter));
 
-            Helper.PerformanceProfiler.Compare(new Dictionary<string, Action>() 
+            Helper.PerformanceProfiler.Compare(new Dictionary<string, Action>()
             {
                 { "FirstUniqChar", () => { int result = FirstUniqChar("loveleetcode"); } },
-                { "FirstUniqCharII", () => { int result = FirstUniqCharII("loveleetcode"); } }
+                { "FirstUniqCharII", () => { int result = FirstUniqCharII("loveleetcode"); } },
+                { "FirstUniqCharIII", () => { int result = FirstUniqCharIII("loveleetcode"); } }
             });
 
             Helper.Base.End(typeof(FirstUniqueCharacter));
@@ -56,7 +56,6 @@ namespace Challenges.Library.LeetCode
 
         }
 
-
         public static int FirstUniqCharII(string s)
         {
             Dictionary<char, int> charsFirstIndex = new Dictionary<char, int>();
@@ -81,57 +80,20 @@ namespace Challenges.Library.LeetCode
 
         }
 
-
         public static int FirstUniqCharIII(string s)
         {
 
-            char[] characters = s.ToCharArray();
-
-            char? firstUniqChar = s[0];
-            int firstUniqIndex = 0;
-
-            char[] xCharacters = new char[characters.Length];
-            int xCharactersIndex = 0;
-
-
-            for (int i = 1; i < characters.Length; i++)
+            for (int i = 0; i < s.Length; i++)
             {
-                if (characters[i] == firstUniqChar)
+                if (s.IndexOf(s[i]) == s.LastIndexOf(s[i]))
                 {
-                    firstUniqChar = GetNextUniqchar(out firstUniqIndex);
+                    return i;
                 }
-                else
-                {
-                    UpdateStack(i, characters[i]);
-                }
-
-
-                if (!xCharacters.Contains(characters[i]))
-                {
-                    xCharacters[xCharactersIndex] = characters[i];
-                    xCharactersIndex++;
-                }
-
-
-
             }
 
-
-
-            return firstUniqIndex;
-
-
-        }
-
-        private static void UpdateStack(int index, char character)
-        {
-            throw new NotImplementedException();
+            return -1;
         }
 
 
-        private static char GetNextUniqchar(out int firstUniqIndex)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
