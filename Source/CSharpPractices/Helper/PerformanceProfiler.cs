@@ -8,9 +8,8 @@ namespace Helper
 {
     public class PerformanceProfiler
     {
-        public static double Check(Action action)
+        public static double Check(Action action, int numberOfIterations = 10000)
         {
-            const int numberOfIterations = 10000;
             double[] allElapsed = new double[numberOfIterations];
 
             var stopWatch = new Stopwatch();
@@ -31,9 +30,9 @@ namespace Helper
             return avg;
         }
 
-        public static void Compare(Dictionary<string, Action> dictionary)
+        public static void Compare(Dictionary<string, Action> dictionary, int numberOfIterations = 10000)
         {
-            Sort(dictionary.Select(x => new KeyValuePair<string, double>(x.Key, Check(x.Value))).ToDictionary(x => x.Key, x => x.Value));
+            Sort(dictionary.Select(x => new KeyValuePair<string, double>(x.Key, Check(x.Value, numberOfIterations))).ToDictionary(x => x.Key, x => x.Value));
         }
 
         public static void Sort(Dictionary<string, double> dictionary)

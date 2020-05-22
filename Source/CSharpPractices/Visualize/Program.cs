@@ -62,8 +62,11 @@ namespace Visualize
             //Challenges.Library.IncreasingSubsequence.Run();
             //Challenges.Library.ReadWebRequest.Run();
             //Challenges.Library.LongestIncreasingSubsequence.Run();
+            //Challenges.Library.ArraySorts.Run();
             //Challenges.Library.LeetCode.RansomNote.Run();
-            Challenges.Library.LeetCode.FirstUniqueCharacter.Run();
+            //Challenges.Library.LeetCode.FirstUniqueCharacter.Run();
+            Challenges.Library.LeetCode.MajorityElement.Run();
+
 
 
             //CSharp.BitWiseOperators.Run();
