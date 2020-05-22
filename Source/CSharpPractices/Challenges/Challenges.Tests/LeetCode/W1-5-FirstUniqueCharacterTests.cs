@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace Challenges.Tests
+namespace Challenges.Tests.LeetCode
 {
     public class FirstUniqueCharacterTests
     {
