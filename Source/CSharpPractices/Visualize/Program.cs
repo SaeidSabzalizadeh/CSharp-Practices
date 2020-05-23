@@ -66,8 +66,8 @@ namespace Visualize
             //Challenges.Library.LeetCode.RansomNote.Run();
             //Challenges.Library.LeetCode.FirstUniqueCharacter.Run();
             //Challenges.Library.LeetCode.MajorityElement.Run();
-
-            Challenges.Library.LeetCode.CousinsInBinaryTree.Run();
+            //Challenges.Library.LeetCode.CousinsInBinaryTree.Run();
+            Challenges.Library.LeetCode.ValidPerfectSquare.Run();
 
 
 

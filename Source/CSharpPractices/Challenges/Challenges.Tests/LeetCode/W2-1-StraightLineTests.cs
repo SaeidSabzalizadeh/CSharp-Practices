@@ -15,7 +15,7 @@ namespace Challenges.Tests.LeetCode
         [Theory]
         [InlineData("1,2-2,3-3,4-4,5-5,6-6,7", true)]
         [InlineData("1,1-2,2-3,4-4,5-5,6-7,7", false)]
-        public void ValidMajorityElement(string numbersStr, bool expectedResult)
+        public void ValidStraightLine(string numbersStr, bool expectedResult)
         {
             string[] rows = numbersStr.Split('-').ToArray();
             int[][] points = new int[rows.Length][];
@@ -26,7 +26,7 @@ namespace Challenges.Tests.LeetCode
             }
 
             var result = Library.LeetCode.StraightLine.CheckStraightLine(points);
-            Assert.True(result == expectedResult, $"{nameof(Library.LeetCode.MajorityElement.FindMajorityElement_Dictionary)} does not meet the expected. Solution result is '{result}' but expected is '{expectedResult}' for: '{numbersStr}'");
+            Assert.True(result == expectedResult, $"{nameof(Library.LeetCode.StraightLine.CheckStraightLine)} does not meet the expected. Solution result is '{result}' but expected is '{expectedResult}' for: '{numbersStr}'");
         }
 
     }
