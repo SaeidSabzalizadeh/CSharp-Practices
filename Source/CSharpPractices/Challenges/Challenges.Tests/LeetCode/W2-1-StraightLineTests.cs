@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using Helper;
+using System.Linq;
 using Xunit;
 
 namespace Challenges.Tests.LeetCode
@@ -17,13 +18,7 @@ namespace Challenges.Tests.LeetCode
         [InlineData("1,1-2,2-3,4-4,5-5,6-7,7", false)]
         public void ValidStraightLine(string numbersStr, bool expectedResult)
         {
-            string[] rows = numbersStr.Split('-').ToArray();
-            int[][] points = new int[rows.Length][];
-
-            for (int i = 0; i < rows.Length; i++)
-            {
-                points[i] = rows[i].Trim().Split(',').Select(x => int.Parse(x.Trim())).ToArray();
-            }
+            int[][] points = StringConvertor.ToIntMatrix(numbersStr);
 
             var result = Library.LeetCode.StraightLine.CheckStraightLine(points);
             Assert.True(result == expectedResult, $"{nameof(Library.LeetCode.StraightLine.CheckStraightLine)} does not meet the expected. Solution result is '{result}' but expected is '{expectedResult}' for: '{numbersStr}'");
