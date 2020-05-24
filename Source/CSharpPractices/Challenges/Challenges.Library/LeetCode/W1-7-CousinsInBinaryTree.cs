@@ -32,8 +32,9 @@ namespace Challenges.Library.LeetCode
             Helper.Base.AddNewSection("Perfoormance Check:");
             Helper.PerformanceProfiler.Compare(new Dictionary<string, Action>()
             {
-                {"IsCousins:", ()=>{ _ =IsCousins(root, 2096621, 2097160); } },
-                {"IsCousinsII_GetAllLevels:", ()=>{ _ =IsCousinsII_GetAllLevels(root, 2096621, 2097160); } }
+                {nameof(IsCousins), ()=>{ _ =IsCousins(root, 2096621, 2097160); } },
+                {nameof(IsCousinsII_GetAllLevels), ()=>{ _ =IsCousinsII_GetAllLevels(root, 2096621, 2097160); } },
+                {nameof(IsCousins_LeetCodeBest), ()=>{ _ =IsCousins_LeetCodeBest(root, 2096621, 2097160); } }
 
             }, 600);
 
@@ -86,6 +87,56 @@ namespace Challenges.Library.LeetCode
                 return true;
 
             return false;
+        }
+
+        public static bool IsCousins_LeetCodeBest(TreeNode root, int x, int y)
+        {
+            if (root.val == x || root.val == y)
+            {
+                return false;
+            }
+
+            int xParent = -1;
+            int xHeight = IsCousins_util(root, ref xParent, x, 0);
+
+            int yParent = -1;
+            int yHeight = IsCousins_util(root, ref yParent, y, 0);
+
+            if (xParent != yParent && xHeight == yHeight)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        private static int IsCousins_util(TreeNode root, ref int parent, int val, int height)
+        {
+
+            if (root == null)
+            {
+                return 0;
+            }
+
+            if (root.val == val)
+            {
+                return height;
+            }
+
+            parent = root.val;
+
+            int left = IsCousins_util(root.left, ref parent, val, height + 1);
+
+            if (left > 0)
+            {
+                return left;
+            }
+
+            parent = root.val;
+
+            int right = IsCousins_util(root.right, ref parent, val, height + 1);
+
+            return right;
         }
 
         private static int NodeLevel(TreeNode root, int x, int currentLevel)

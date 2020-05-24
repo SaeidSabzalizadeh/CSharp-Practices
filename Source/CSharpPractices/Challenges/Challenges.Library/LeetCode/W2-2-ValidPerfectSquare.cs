@@ -30,8 +30,9 @@ namespace Challenges.Library.LeetCode
 
             Helper.PerformanceProfiler.Compare(new Dictionary<string, Action>()
             {
-                {"IsPerfectSquare:",   ()=>{ bool result = IsPerfectSquare(2025000000); } },
-                {"IsPerfectSquareII:", ()=>{ bool result = IsPerfectSquareII(2025000000); } }
+                {nameof(IsPerfectSquare),   ()=>{ bool result = IsPerfectSquare(2025000000); } },
+                {nameof(IsPerfectSquareII), ()=>{ bool result = IsPerfectSquareII(2025000000); } },
+                {nameof(IsPerfectSquare_LeetCodeBest), ()=>{ bool result = IsPerfectSquare_LeetCodeBest(2025000000); } }
             });
 
 
@@ -71,6 +72,36 @@ namespace Challenges.Library.LeetCode
             int second = num / 2;
 
             return CheckPerfectSquare(num, first, second);
+        }
+
+        public static bool IsPerfectSquare_LeetCodeBest(int num)
+        {
+            long i = 1;
+
+            while (i * i < num)
+            {
+                i *= 2;
+            }
+            long l = i / 2;
+            long r = i;
+
+            while (l < r)
+            {
+                if (r * r == num) return true;
+
+                long m = (l + r) / 2;
+
+                if (m * m < num)
+                {
+                    l = m;
+                    r = r - 1;
+                }
+                else
+                {
+                    r = m;
+                }
+            }
+            return false;
         }
 
         private static bool CheckPerfectSquare(int num, long first, long second)

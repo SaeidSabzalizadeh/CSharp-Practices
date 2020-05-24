@@ -46,5 +46,18 @@ namespace Challenges.Tests.LeetCode
             Assert.True(result == expectedResult, $"{nameof(Library.LeetCode.ValidPerfectSquare.IsPerfectSquareII)} does not meet the expected. Solution result is '{result}' but expected is '{expectedResult}' for: '{number}'");
         }
 
+        [Theory]
+        [InlineData(49, true)]
+        [InlineData(8, false)]
+        [InlineData(16, true)]
+        [InlineData(121, true)]
+        [InlineData(81796, true)]
+        [InlineData(14, false)]
+        public void ValidPerfectSquare_LeetCodeBest(int number, bool expectedResult)
+        {
+            var result = Library.LeetCode.ValidPerfectSquare.IsPerfectSquare_LeetCodeBest(number);
+            Assert.True(result == expectedResult, $"{nameof(Library.LeetCode.ValidPerfectSquare.IsPerfectSquare_LeetCodeBest)} does not meet the expected. Solution result is '{result}' but expected is '{expectedResult}' for: '{number}'");
+        }
+
     }
 }

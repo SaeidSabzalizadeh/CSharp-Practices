@@ -23,7 +23,7 @@ namespace Challenges.Tests.LeetCode
 
 
         [Fact]
-        public void ValidMajorityElementIsCousinsII_GetAllLevels()
+        public void ValidCousinsInBinaryTree_GetAllLevels()
         {
             List<Tuple<TreeNode, int, int, bool, string>> sampleNodes = GetSampleNodes();
 
@@ -31,6 +31,19 @@ namespace Challenges.Tests.LeetCode
             {
                 var result = CousinsInBinaryTree.IsCousinsII_GetAllLevels(item.Item1, item.Item2, item.Item3);
                 Assert.True(result == item.Item4, $"{nameof(CousinsInBinaryTree.IsCousinsII_GetAllLevels)} does not meet the expected. Solution result is '{result}' but expected is '{item.Item4}' for: '[{item.Item5}] | x={item.Item2}, y={item.Item3}'");
+
+            }
+        }
+
+        [Fact]
+        public void ValidCousinsInBinaryTree_LeetCodeBest()
+        {
+            List<Tuple<TreeNode, int, int, bool, string>> sampleNodes = GetSampleNodes();
+
+            foreach (var item in sampleNodes)
+            {
+                var result = CousinsInBinaryTree.IsCousins_LeetCodeBest(item.Item1, item.Item2, item.Item3);
+                Assert.True(result == item.Item4, $"{nameof(CousinsInBinaryTree.IsCousins_LeetCodeBest)} does not meet the expected. Solution result is '{result}' but expected is '{item.Item4}' for: '[{item.Item5}] | x={item.Item2}, y={item.Item3}'");
 
             }
         }

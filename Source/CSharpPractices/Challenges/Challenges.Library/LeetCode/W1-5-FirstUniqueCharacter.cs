@@ -23,9 +23,10 @@ namespace Challenges.Library.LeetCode
 
             Helper.PerformanceProfiler.Compare(new Dictionary<string, Action>()
             {
-                { "FirstUniqChar", () => { int result = FirstUniqChar("loveleetcode"); } },
-                { "FirstUniqCharII", () => { int result = FirstUniqCharII("loveleetcode"); } },
-                { "FirstUniqCharIII", () => { int result = FirstUniqCharIII("loveleetcode"); } }
+                { nameof(FirstUniqChar), () => { int result = FirstUniqChar("loveleetcode"); } },
+                { nameof(FirstUniqCharII), () => { int result = FirstUniqCharII("loveleetcode"); } },
+                { nameof(FirstUniqCharIII), () => { int result = FirstUniqCharIII("loveleetcode"); } },
+                { nameof(FirstUniqChar_LeetCodeBest), () => { int result = FirstUniqChar_LeetCodeBest("loveleetcode"); } }
             });
 
             Helper.Base.End(typeof(FirstUniqueCharacter));
@@ -89,6 +90,24 @@ namespace Challenges.Library.LeetCode
                 {
                     return i;
                 }
+            }
+
+            return -1;
+        }
+
+        public static int FirstUniqChar_LeetCodeBest(string s)
+        {
+            var a = new int[26];
+            foreach (char c in s)
+            {
+                a[c - 'a'] += 1;
+            }
+
+            for (int i = 0; i < s.Length; i++)
+            {
+                var c = s[i];
+                if (a[c - 'a'] == 1)
+                    return i;
             }
 
             return -1;

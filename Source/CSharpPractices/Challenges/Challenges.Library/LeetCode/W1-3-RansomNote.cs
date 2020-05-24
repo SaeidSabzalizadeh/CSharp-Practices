@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 
 namespace Challenges.Library.LeetCode
@@ -28,7 +29,7 @@ namespace Challenges.Library.LeetCode
         public static void Run()
         {
             Helper.Base.Start(typeof(RansomNote));
-            const int leftPadLength = 40;
+            //const int leftPadLength = 40;
 
             //string ransomNote = "a";
             //string magazine = "b";
@@ -43,12 +44,23 @@ namespace Challenges.Library.LeetCode
             //Helper.Base.AddItem($"ransomNote: '{ransomNote}', magazine: '{magazine}' > ", $"CanConstruct: {CanConstruct(ransomNote, magazine)}", leftPadLength);
 
 
-            Helper.Base.AddNewSection();
-            double canConstruct1RunTime = Helper.PerformanceProfiler.Check(() => { string a = "aa"; string b = "aab"; bool result = CanConstruct1(a, b); });
-            Helper.Base.AddItem("CanConstruct1: ", canConstruct1RunTime);
+            //Helper.Base.AddNewSection();
+            //double canConstruct1RunTime = Helper.PerformanceProfiler.Check(() => { string a = "aa"; string b = "aab"; bool result = CanConstruct1(a, b); });
+            //Helper.Base.AddItem("CanConstruct1: ", canConstruct1RunTime);
             
-            double canConstruct2RunTime = Helper.PerformanceProfiler.Check(() => { string a = "aa"; string b = "aab"; bool result = CanConstruct2(a, b); });
-            Helper.Base.AddItem("CanConstruct2: ", canConstruct2RunTime);
+            //double canConstruct2RunTime = Helper.PerformanceProfiler.Check(() => { string a = "aa"; string b = "aab"; bool result = CanConstruct2(a, b); });
+            //Helper.Base.AddItem("CanConstruct2: ", canConstruct2RunTime);
+
+            string a = "aa"; 
+            string b = "aab";
+
+            Helper.PerformanceProfiler.Compare(new Dictionary<string, Action>()
+            {
+                { nameof(CanConstruct1), () => { bool result = CanConstruct1(a, b); } },
+                { nameof(CanConstruct2), () => { bool result = CanConstruct2(a, b); } },
+                { nameof(CanConstruct_LeetCodeBest), () => { bool result = CanConstruct_LeetCodeBest(a, b); } },
+            });
+
 
             Helper.Base.End(typeof(RansomNote));
 
@@ -90,6 +102,25 @@ namespace Challenges.Library.LeetCode
 
             return true;
         }
+
+        public static bool CanConstruct_LeetCodeBest(string ransomNote, string magazine)
+        {
+            int[] leters = new int[('z' - 'a') + 1];
+
+            for (int i = 0; i < magazine.Length; i++)
+            {
+                leters[magazine[i] - 'a']++;
+            }
+
+            for (int i = 0; i < ransomNote.Length; i++)
+            {
+                if (--leters[ransomNote[i] - 'a'] < 0)
+                    return false;
+            }
+
+            return true;
+        }
+
 
         private static bool FindAndRemove(char character, ref string magazine)
         {

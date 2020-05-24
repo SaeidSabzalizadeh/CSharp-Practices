@@ -63,11 +63,16 @@ namespace Visualize
             //Challenges.Library.ReadWebRequest.Run();
             //Challenges.Library.LongestIncreasingSubsequence.Run();
             //Challenges.Library.ArraySorts.Run();
+            Challenges.Library.LeetCode.JewelsAndStones.Run();
             //Challenges.Library.LeetCode.RansomNote.Run();
+            //Challenges.Library.LeetCode.NumberComplement.Run();
             //Challenges.Library.LeetCode.FirstUniqueCharacter.Run();
             //Challenges.Library.LeetCode.MajorityElement.Run();
             //Challenges.Library.LeetCode.CousinsInBinaryTree.Run();
-            Challenges.Library.LeetCode.ValidPerfectSquare.Run();
+            //Challenges.Library.LeetCode.StraightLine.Run();
+            //Challenges.Library.LeetCode.ValidPerfectSquare.Run();
+            //Challenges.Library.LeetCode.FindTheTownJudge.Run();
+
 
 
 

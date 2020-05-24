@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Challenges.Library.LeetCode
 {
@@ -21,7 +23,49 @@ namespace Challenges.Library.LeetCode
      */
     public class JewelsAndStones
     {
-        public int NumJewelsInStones(string J, string S)
+
+        public static void Run()
+        {
+            Helper.Base.Start(typeof(JewelsAndStones));
+            //const int leftPadLength = 40;
+
+            //string ransomNote = "a";
+            //string magazine = "b";
+            //Helper.Base.AddItem($"ransomNote: '{ransomNote}', magazine: '{magazine}' > ", $"CanConstruct: {CanConstruct(ransomNote, magazine)}", leftPadLength);
+
+            //ransomNote = "aa";
+            //magazine = "ab";
+            //Helper.Base.AddItem($"ransomNote: '{ransomNote}', magazine: '{magazine}' > ", $"CanConstruct: {CanConstruct(ransomNote, magazine)}", leftPadLength);
+
+            //ransomNote = "aa";
+            //magazine = "aab";
+            //Helper.Base.AddItem($"ransomNote: '{ransomNote}', magazine: '{magazine}' > ", $"CanConstruct: {CanConstruct(ransomNote, magazine)}", leftPadLength);
+
+
+            //Helper.Base.AddNewSection();
+            //double canConstruct1RunTime = Helper.PerformanceProfiler.Check(() => { string a = "aa"; string b = "aab"; bool result = CanConstruct1(a, b); });
+            //Helper.Base.AddItem("CanConstruct1: ", canConstruct1RunTime);
+
+            //double canConstruct2RunTime = Helper.PerformanceProfiler.Check(() => { string a = "aa"; string b = "aab"; bool result = CanConstruct2(a, b); });
+            //Helper.Base.AddItem("CanConstruct2: ", canConstruct2RunTime);
+
+            string j = "aA";
+            string s = "aAAbbbb";
+
+            Helper.PerformanceProfiler.Compare(new Dictionary<string, Action>()
+            {
+                { nameof(NumJewelsInStones), () => { int result = NumJewelsInStones(j, s); } },
+                { nameof(NumJewelsInStones_LeetCodeBest), () => { int result = NumJewelsInStones_LeetCodeBest(j, s); } },
+            });
+
+
+            Helper.Base.End(typeof(JewelsAndStones));
+
+
+        }
+
+
+        public static int NumJewelsInStones(string J, string S)
         {
             int jewels = 0;
             char[] jArray = J.ToCharArray();
@@ -34,6 +78,26 @@ namespace Challenges.Library.LeetCode
 
             return jewels;
         }
+
+
+        public static int NumJewelsInStones_LeetCodeBest(string J, string S)
+        {
+
+            int count = 0;
+            foreach (char a in J)
+            {
+                foreach (char b in S)
+                {
+                    if (a == b)
+                    {
+                        count++;
+                    }
+
+                }
+            }
+            return count;
+        }
+
 
     }
 }

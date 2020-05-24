@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Helper;
+using System;
+using System.Collections.Generic;
 
 namespace Challenges.Library.LeetCode
 {
@@ -22,6 +24,22 @@ namespace Challenges.Library.LeetCode
 
 
          */
+
+        public static void Run()
+        {
+            Base.Start(typeof(StraightLine));
+
+            int[][] points = StringConvertor.ToIntMatrix("1,2-2,3-3,4-4,5-5,6-6,7");
+            PerformanceProfiler.Compare(new Dictionary<string, Action>()
+            {
+                {nameof(CheckStraightLine),   ()=>{ bool result = CheckStraightLine(points); } },
+                {nameof(CheckStraightLine_LeetCodeBest), ()=>{ bool result = CheckStraightLine_LeetCodeBest(points); } },
+            });
+
+
+            Base.End(typeof(StraightLine));
+        }
+
 
 
         public static bool CheckStraightLine(int[][] coordinates)
@@ -75,6 +93,28 @@ namespace Challenges.Library.LeetCode
             double b = ((x1 * y2) - (x2 * y1)) / (x1 - x2);
 
             return new Tuple<bool, double, double>(true, a, b);
+        }
+
+        public static bool CheckStraightLine_LeetCodeBest(int[][] coordinates)
+        {
+            int[] point1 = coordinates[1];
+            int[] point2 = coordinates[0];
+            float gSlope = slope(point1, point2);
+
+            for (int i = 1; i < coordinates.Length; i++)
+            {
+                int[] p1 = coordinates[i];
+                int[] p2 = coordinates[0];
+                float slop = slope(p1, p2);
+                if (gSlope != slop) return false;
+            }
+            return true;
+        }
+
+        private static float slope(int[] p1, int[] p2)
+        {
+            if (p1[0] == p2[0]) return 0;
+            return (float)(p2[1] - p1[1]) / (p2[0] - p1[0]);
         }
 
     }

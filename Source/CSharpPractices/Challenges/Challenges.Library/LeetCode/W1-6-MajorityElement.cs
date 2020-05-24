@@ -41,14 +41,15 @@ namespace Challenges.Library.LeetCode
 
             Helper.PerformanceProfiler.Compare(new Dictionary<string, Action>()
             {
-                 { "FindMajorityElement_Dictionary", () => { int result = FindMajorityElement_Dictionary(longArray);}},
-                 { "FindMajorityElementII_ImprovedDictionary", () => { int result = FindMajorityElementII_ImprovedDictionary(longArray);}},
-                 { "FindMajorityElementIII_LinqSort", () => { int result = FindMajorityElementIII_LinqSort(longArray);}},
-                 { "FindMajorityElementIV_LinqSortIndirect", () => { int result = FindMajorityElementIV_LinqSortIndirect(longArray);}},
-                 { "FindMajorityElementV_InsertionSort", () => { int result = FindMajorityElementV_InsertionSort(longArray);}},
-                 { "FindMajorityElementVI_BubbleSort", () => { int result = FindMajorityElementVI_BubbleSort(longArray);}},
-                 { "FindMajorityElementVII_SelectionSort", () => { int result = FindMajorityElementVII_SelectionSort(longArray);}},
-                 { "FindMajorityElementVIII_Loops", () => { int result = FindMajorityElementVIII_Loops(longArray);}},
+                 { nameof(FindMajorityElement_Dictionary), () => { int result = FindMajorityElement_Dictionary(longArray);}},
+                 { nameof(FindMajorityElementII_ImprovedDictionary), () => { int result = FindMajorityElementII_ImprovedDictionary(longArray);}},
+                 { nameof(FindMajorityElementIII_LinqSort), () => { int result = FindMajorityElementIII_LinqSort(longArray);}},
+                 { nameof(FindMajorityElementIV_LinqSortIndirect), () => { int result = FindMajorityElementIV_LinqSortIndirect(longArray);}},
+                 { nameof(FindMajorityElementV_InsertionSort), () => { int result = FindMajorityElementV_InsertionSort(longArray);}},
+                 { nameof(FindMajorityElementVI_BubbleSort), () => { int result = FindMajorityElementVI_BubbleSort(longArray);}},
+                 { nameof(FindMajorityElementVII_SelectionSort), () => { int result = FindMajorityElementVII_SelectionSort(longArray);}},
+                 { nameof(FindMajorityElementVIII_Loops), () => { int result = FindMajorityElementVIII_Loops(longArray);}},
+                 { nameof(FindMajorityElement_LeetCodeBest), () => { int result = FindMajorityElement_LeetCodeBest(longArray);}},
 
             }, 4); ;
 
@@ -169,6 +170,30 @@ namespace Challenges.Library.LeetCode
 
             return int.MinValue;
 
+        }
+
+        public static int FindMajorityElement_LeetCodeBest(int[] nums)
+        {
+            // Boyer-Moore Voting
+            var candidate = 0;
+            var count = 0;
+
+            for (var i = 0; i < nums.Length; i++)
+            {
+                // eg. {7,5,|7,7,5,5|,7}
+                if (count == 0)
+                {
+                    candidate = nums[i];
+                    count++;
+                }
+                else
+                {
+                    if (nums[i] == candidate) count++;
+                    else count--;
+                }
+            }
+
+            return candidate;
         }
 
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace Challenges.Library.LeetCode
 {
@@ -25,6 +26,20 @@ namespace Challenges.Library.LeetCode
 
         */
 
+
+        public static void Run()
+        {
+            Helper.Base.Start(typeof(NumberComplement));
+
+            Helper.PerformanceProfiler.Compare(new Dictionary<string, Action>()
+            {
+                { nameof(FindComplement), () => { int result = FindComplement(62589548); } },
+                { nameof(FindComplement_LeetCodeBest), () => { int result = FindComplement_LeetCodeBest(62589548); } },
+            });
+
+            Helper.Base.End(typeof(NumberComplement));
+        }
+
         public static int FindComplement(int num)
         {
             if (num < 1)
@@ -35,6 +50,44 @@ namespace Challenges.Library.LeetCode
 
             return noLeadingZeroComplement;
         }
+
+        public static int FindComplement_LeetCodeBest(int num)
+        {
+            int n = num;
+            int lastZero = -1;
+            int count = 0;
+            while (n > 0)
+            {
+                if ((n & 1) == 0)
+                {
+                    lastZero = count;
+                }
+                n = n >> 1;
+                count++;
+            }
+            if (lastZero == -1)
+            {
+                return 0;
+            }
+            var temp = 1 << lastZero;
+            temp = temp >> 1;
+
+            var res = 1;
+
+            while (temp > 0)
+            {
+                res = res << 1;
+                if ((num & temp) == 0)
+                {
+                    res += 1;
+                }
+                temp = temp >> 1;
+            }
+
+            return res;
+
+        }
+
 
         private static int RemoveLeadingOnes(int number)
         {
