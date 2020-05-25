@@ -48,7 +48,7 @@ namespace Challenges.Library.LeetCode
                     current = current.left;
                 }
 
-                else if (preorder[i] > parent.val)
+                //else if (preorder[i] > parent.val)
 
 
 

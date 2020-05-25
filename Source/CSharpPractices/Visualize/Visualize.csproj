@@ -8,6 +8,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Challenges\Challenges.Library\Challenges.Library.csproj" />
     <ProjectReference Include="..\CSharp\CSharp.csproj" />
+    <ProjectReference Include="..\Design Patterns\DesignPatternsLibrary\DesignPatternsLibrary.csproj" />
     <ProjectReference Include="..\MultiThreading\MultiThreading.csproj" />
   </ItemGroup>
 
