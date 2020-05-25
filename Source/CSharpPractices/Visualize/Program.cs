@@ -75,7 +75,9 @@ namespace Visualize
 
 
             //DesignPatternsLibrary.Decorator.EntryPoint.Main(args);
-            DesignPatternsLibrary.Iterator.EntryPoint.Main(args);
+            //DesignPatternsLibrary.Iterator.EntryPoint.Main(args);
+            DesignPatternsLibrary.Observer.EntryPoint.Main(args);
+
 
 
 
