@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Challenges.Library.LeetCode.Common;
+using System;
 using System.Collections.Generic;
 
 namespace Challenges.Library.LeetCode
@@ -219,54 +220,8 @@ namespace Challenges.Library.LeetCode
         }
 
 
-
-
-
     }
 
-    public class TreeNode
-    {
-        public int val;
-        public TreeNode left;
-        public TreeNode right;
-        public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
-        {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-
-        public Dictionary<int, List<int>> GetLevels()
-        {
-            Dictionary<int, List<int>> levels = new Dictionary<int, List<int>>();
-            GetLevels(this, levels, 0);
-
-            return levels;
-        }
-
-        private void GetLevels(TreeNode node, Dictionary<int, List<int>> levelValues, int level)
-        {
-
-            if (levelValues == null)
-                levelValues = new Dictionary<int, List<int>>();
-
-            if (!levelValues.ContainsKey(level))
-                levelValues.Add(level, new List<int>());
-
-            if (node == null)
-            {
-                levelValues[level].Add(int.MinValue);
-                return;
-            }
-
-            levelValues[level].Add(node.val);
-
-            GetLevels(node.left, levelValues, level + 1);
-            GetLevels(node.right, levelValues, level + 1);
-
-        }
-
-
-    }
+   
 
 }
