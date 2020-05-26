@@ -188,12 +188,15 @@ namespace Challenges.Library.LeetCode
                 }
                 else
                 {
-                    if (nums[i] == candidate) count++;
-                    else count--;
+                    if (nums[i] == candidate)
+                        count++;
+                    else
+                        count--;
                 }
             }
 
             return candidate;
+
         }
 
 

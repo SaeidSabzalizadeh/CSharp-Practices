@@ -1,4 +1,5 @@
 ﻿using Challenges.Library.LeetCode.Common;
+using System;
 
 namespace Challenges.Library.LeetCode
 {
@@ -25,41 +26,81 @@ namespace Challenges.Library.LeetCode
 
         */
 
+        public static void Run()
+        {
+            //TreeNode node = new TreeNode(8);
+            //node.left = new TreeNode(5);
+            //node.right = new TreeNode(10);
+            //node.left.left = new TreeNode(1);
+            //node.left.right = new TreeNode(7);
+            //node.right.left = null;
+            //node.right.right = new TreeNode(12);
+
+
+            TreeNode node = BstFromPreorder(new int[] { 8, 5, 1, 7, 10, 12 });
+            string str = Common.Helper.ToString(node);
+            Console.ReadLine();
+
+        }
+
         public static TreeNode BstFromPreorder(int[] preorder)
         {
-            TreeNode root = new TreeNode();
-            root.val = preorder[0];
-            TreeNode parent = null;
-
-            TreeNode current = root;
-            for (int i = 1; i < preorder.Length; i++)
-            {
-                if (preorder[i] > current.val && preorder[i] > parent.val)
-                {
-                    current.right = new TreeNode(preorder[i]);
-                    parent = current;
-                    current = current.right;
-
-                }
-                else if (preorder[i] < current.val && preorder[i] < parent.val)
-                {
-                    current.left = new TreeNode(preorder[i]);
-                    parent = current;
-                    current = current.left;
-                }
-
-                //else if (preorder[i] > parent.val)
-
-
-
-            }
-
+            TreeNode root = null;
+            int index = 0;
+            BuildTreeII(root, preorder, ref index);
             return root;
         }
 
+        private static void BuildTree(TreeNode root, int[] preorder, ref int index)
+        {
+            if (index >= preorder.Length)
+                return;
+
+            int item = preorder[index];
+
+            if (item < root.val)
+            {
+                if (root.left == null)
+                {
+                    root.left = new TreeNode(item);
+                    index++;
+                }
+
+                BuildTree(root.left, preorder, ref index);
+            }
+
+            if (item > root.val)
+            {
+                if (root.right == null)
+                {
+                    root.right = new TreeNode(item);
+                    index++;
+                }
+
+                BuildTree(root.right, preorder, ref index);
+            }
+
+        }
 
 
+        private static void BuildTreeII(TreeNode root, int[] preorder, ref int index)
+        {
+            int item = preorder[index];
 
+            if (root == null)
+                root = new TreeNode(item);
 
+            index++;
+            if (index >= preorder.Length)
+                return;
+
+            int nextItem = preorder[index];
+
+            if (nextItem > item)
+                BuildTreeII(root.right, preorder, ref index);
+            else
+                BuildTreeII(root.left, preorder, ref index);
+
+        }
     }
 }

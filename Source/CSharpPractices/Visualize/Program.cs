@@ -72,11 +72,12 @@ namespace Visualize
             //Challenges.Library.LeetCode.StraightLine.Run();
             //Challenges.Library.LeetCode.ValidPerfectSquare.Run();
             //Challenges.Library.LeetCode.FindTheTownJudge.Run();
+            Challenges.Library.LeetCode.ConstructBinarySearchOfPreorderTraversal.Run();
 
 
             //DesignPatternsLibrary.Decorator.EntryPoint.Main(args);
             //DesignPatternsLibrary.Iterator.EntryPoint.Main(args);
-            DesignPatternsLibrary.Observer.EntryPoint.Main(args);
+            //DesignPatternsLibrary.Observer.EntryPoint.Main(args);
 
 
 
