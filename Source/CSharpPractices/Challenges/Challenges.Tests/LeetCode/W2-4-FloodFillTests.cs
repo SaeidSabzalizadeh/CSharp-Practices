@@ -7,7 +7,7 @@ namespace Challenges.Tests.LeetCode
     {
         [Theory]
         [InlineData("1,1,1-1,1,0-1,0,1", 1, 1, 2, "2,2,2-2,2,0-2,0,1")]
-        public void ValidFindTheTownJudge(string numbersStr, int sr, int sc, int newColor, string expectedResult)
+        public void ValidFloodFill(string numbersStr, int sr, int sc, int newColor, string expectedResult)
         {
             int[][] matrix = StringConvertor.ToIntMatrix(numbersStr);
             int[][] expectedMatrix = StringConvertor.ToIntMatrix(expectedResult);
