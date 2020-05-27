@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Helper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,8 +32,20 @@ namespace Challenges.Library.LeetCode
 
          */
 
-        //char[] digits = "0123456789".ToCharArray();
 
+        public static void Run()
+        {
+            Base.Start(typeof(RemoveKDigits));
+
+
+            PerformanceProfiler.Compare(new Dictionary<string, Action>()
+            {
+                {nameof(RemoveKdigits),   ()=>{ string result = RemoveKdigits("2132422587452116894621014862305470230213604", 18); } },
+                {nameof(RemoveKdigits_LeetCodeBest),   ()=>{ string result = RemoveKdigits_LeetCodeBest("2132422587452116894621014862305470230213604", 18); } },
+            });
+
+            Base.End(typeof(RemoveKDigits));
+        }
 
         public static string RemoveKdigits_LeetCodeBest(string num, int k)
         {

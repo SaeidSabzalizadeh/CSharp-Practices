@@ -73,7 +73,11 @@ namespace Visualize
             //Challenges.Library.LeetCode.ValidPerfectSquare.Run();
             //Challenges.Library.LeetCode.FindTheTownJudge.Run();
             //Challenges.Library.LeetCode.ConstructBinarySearchOfPreorderTraversal.Run();
-            Challenges.Library.LeetCode.SingleElementInArray.Run();
+            //Challenges.Library.LeetCode.SingleElementInArray.Run();
+            //Challenges.Library.LeetCode.RemoveKDigits.Run();
+            Challenges.Library.LeetCode.ImplementTrie.Run();
+
+
 
 
 
