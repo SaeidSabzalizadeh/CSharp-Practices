@@ -75,8 +75,8 @@ namespace Visualize
             //Challenges.Library.LeetCode.ConstructBinarySearchOfPreorderTraversal.Run();
             //Challenges.Library.LeetCode.SingleElementInArray.Run();
             //Challenges.Library.LeetCode.RemoveKDigits.Run();
-            Challenges.Library.LeetCode.ImplementTrie.Run();
-
+            //Challenges.Library.LeetCode.ImplementTrie.Run();
+            Challenges.Library.LeetCode.MaximumSumCircularSubarray.Run();
 
 
 
