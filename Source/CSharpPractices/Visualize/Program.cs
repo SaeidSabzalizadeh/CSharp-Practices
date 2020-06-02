@@ -63,20 +63,22 @@ namespace Visualize
             //Challenges.Library.ReadWebRequest.Run();
             //Challenges.Library.LongestIncreasingSubsequence.Run();
             //Challenges.Library.ArraySorts.Run();
-            //Challenges.Library.LeetCode.JewelsAndStones.Run();
-            //Challenges.Library.LeetCode.RansomNote.Run();
-            //Challenges.Library.LeetCode.NumberComplement.Run();
-            //Challenges.Library.LeetCode.FirstUniqueCharacter.Run();
-            //Challenges.Library.LeetCode.MajorityElement.Run();
-            //Challenges.Library.LeetCode.CousinsInBinaryTree.Run();
-            //Challenges.Library.LeetCode.StraightLine.Run();
-            //Challenges.Library.LeetCode.ValidPerfectSquare.Run();
-            //Challenges.Library.LeetCode.FindTheTownJudge.Run();
-            //Challenges.Library.LeetCode.ConstructBinarySearchOfPreorderTraversal.Run();
-            //Challenges.Library.LeetCode.SingleElementInArray.Run();
-            //Challenges.Library.LeetCode.RemoveKDigits.Run();
-            //Challenges.Library.LeetCode.ImplementTrie.Run();
-            Challenges.Library.LeetCode.MaximumSumCircularSubarray.Run();
+            //Challenges.Library.LeetCode.May.JewelsAndStones.Run();
+            //Challenges.Library.LeetCode.May.RansomNote.Run();
+            //Challenges.Library.LeetCode.May.NumberComplement.Run();
+            //Challenges.Library.LeetCode.May.FirstUniqueCharacter.Run();
+            //Challenges.Library.LeetCode.May.MajorityElement.Run();
+            //Challenges.Library.LeetCode.May.CousinsInBinaryTree.Run();
+            //Challenges.Library.LeetCode.May.StraightLine.Run();
+            //Challenges.Library.LeetCode.May.ValidPerfectSquare.Run();
+            //Challenges.Library.LeetCode.May.FindTheTownJudge.Run();
+            //Challenges.Library.LeetCode.May.ConstructBinarySearchOfPreorderTraversal.Run();
+            //Challenges.Library.LeetCode.May.SingleElementInArray.Run();
+            //Challenges.Library.LeetCode.May.RemoveKDigits.Run();
+            //Challenges.Library.LeetCode.May.ImplementTrie.Run();
+            //Challenges.Library.LeetCode.May.MaximumSumCircularSubarray.Run();
+            //Challenges.Library.LeetCode.May.AllAnagramsInString.Run();
+
 
 
 
