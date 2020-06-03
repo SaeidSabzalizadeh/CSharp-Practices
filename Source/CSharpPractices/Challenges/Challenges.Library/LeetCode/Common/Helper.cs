@@ -61,31 +61,5 @@ namespace Challenges.Library.LeetCode.Common
 
         }
 
-
-        //public static string ToStringNew(TreeNode node)
-        //{
-        //    string str = $"[{node?.val.ToString() ?? "null" }";
-        //    GetStr(node, 1, ref str);
-
-        //    str = $"{str}]";
-        //    return str;
-        //}
-
-
-        //private static void GetStr(TreeNode node, int level, ref string str)
-        //{
-        //    if (node == null)
-        //    {
-        //        str = $"{str},null";
-        //        return;
-        //    }
-
-        //    str = $"{str},{node.val}";
-
-        //    GetStr(node.left, level + 1, ref str);
-        //    GetStr(node.right, level + 1, ref str);
-
-        //}
-
     }
 }

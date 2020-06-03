@@ -79,6 +79,8 @@ namespace Visualize
             //Challenges.Library.LeetCode.May.MaximumSumCircularSubarray.Run();
             //Challenges.Library.LeetCode.May.AllAnagramsInString.Run();
 
+            Challenges.Library.LeetCode.June.TwoCityScheduling.Run();
+
 
 
 
