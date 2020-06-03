@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Xunit;
 
 namespace Challenges.Tests
 {
-  public  class DuplicationTests
+    public  class DuplicationTests
     {
         [Theory]
         [InlineData("2, 1, 3, 1, 0", 1)]
