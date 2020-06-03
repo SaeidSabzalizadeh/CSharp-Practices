@@ -68,6 +68,22 @@ namespace WeatherData.Tests
             }
         }
 
+        [Fact]
+        public void Test_050_ParseFilteredSampleFile()
+        {
+            var start = DateTime.Parse("2012-12-31 12:51:48");
+            var end = DateTime.Parse("2012-12-31 22:43:13");
+
+            using (var text = new StreamReader(fileName))
+            {
+                text.ReadLine(); // ignore 1st line of text, it contains headers.
+
+                var data = WeatherData.ReadRange(text, start, end);
+
+                Check.That(data.Count()).IsEqualTo(6);
+            }
+        }
+
 
     }
 }
