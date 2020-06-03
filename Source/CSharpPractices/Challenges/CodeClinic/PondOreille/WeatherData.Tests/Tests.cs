@@ -1,5 +1,6 @@
 using NFluent;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Xunit;
@@ -8,6 +9,7 @@ namespace WeatherData.Tests
 {
     public class Tests
     {
+
         #region Sample Data
         private static string sampleData =
 @"date       time    	Air_Temp	Barometric_Press	Dew_Point	Relative_Humidity	Wind_Dir	Wind_Gust	Wind_Speed
@@ -84,6 +86,46 @@ namespace WeatherData.Tests
             }
         }
 
+        [Fact]
+        public void Test_060_FitLineToFilteredSampleFile()
+        {
+            var start = DateTime.Parse("2012-01-02 00:00:00");
+            var end = DateTime.Parse("2012-01-02 17:00:00");
+
+            using (var text = new StreamReader(fileName))
+            {
+                text.ReadLine(); // ignore 1st line of text, it contains headers.
+
+                //var data = from wo in WeatherData.ReadRange(text, start, end) // Extract
+                //           select new // Transforming
+                //           {
+                //               Hours = (wo.TimeStamp - start).TotalHours,
+                //               wo.Barometric_Pressure
+                //           };
+
+
+                var data = WeatherData.ReadRange(text, start, end) // Extract
+                          .Select(wo => new                        // Transforming
+                          {
+                              Hours = (wo.TimeStamp - start).TotalHours,
+                              wo.Barometric_Pressure
+                          });
+
+
+                var arrX = new List<double>();
+                var arrY = new List<double>();
+
+                foreach (var wo in data) // Load
+                {
+                    arrX.Add(wo.Hours);
+                    arrY.Add(wo.Barometric_Pressure);
+                }
+
+                var (intersect, slope) = MathNet.Numerics.Fit.Line(arrX.ToArray(), arrY.ToArray());
+
+                Check.That(slope).IsStrictlyLessThan(0);
+            }
+        }
 
     }
 }
