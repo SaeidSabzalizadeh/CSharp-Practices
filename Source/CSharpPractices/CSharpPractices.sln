@@ -70,9 +70,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenges.LeetCode.Tests",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EightQueens", "EightQueens", "{25383714-6692-41CA-9D27-744B8E0353D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EightQueens.Chess", "Challenges\CodeClinic\EightQueens\EightQueens.Chess\EightQueens.Chess.csproj", "{B499A20A-EA47-4965-B76C-4048BC47CA7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EightQueens.Chess", "Challenges\CodeClinic\EightQueens\EightQueens.Chess\EightQueens.Chess.csproj", "{B499A20A-EA47-4965-B76C-4048BC47CA7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EightQueens.Tests", "Challenges\CodeClinic\EightQueens\EightQueens.Tests\EightQueens.Tests.csproj", "{433C92BD-FB53-4DB7-8188-240991F07979}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EightQueens.Tests", "Challenges\CodeClinic\EightQueens\EightQueens.Tests\EightQueens.Tests.csproj", "{433C92BD-FB53-4DB7-8188-240991F07979}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problems.LeetCode", "Challenges\LeetCode\Problems.LeetCode\Problems.LeetCode.csproj", "{DD2D1446-5E9D-42B5-943F-B38B24EB9237}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problems.LeetCode.Tests", "Challenges\LeetCode\Problems.LeetCode.Tests\Problems.LeetCode.Tests.csproj", "{768FE796-ECFF-45CC-AFDC-045FAEF0572D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -164,6 +168,14 @@ Global
 		{433C92BD-FB53-4DB7-8188-240991F07979}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{433C92BD-FB53-4DB7-8188-240991F07979}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{433C92BD-FB53-4DB7-8188-240991F07979}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD2D1446-5E9D-42B5-943F-B38B24EB9237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD2D1446-5E9D-42B5-943F-B38B24EB9237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD2D1446-5E9D-42B5-943F-B38B24EB9237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD2D1446-5E9D-42B5-943F-B38B24EB9237}.Release|Any CPU.Build.0 = Release|Any CPU
+		{768FE796-ECFF-45CC-AFDC-045FAEF0572D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{768FE796-ECFF-45CC-AFDC-045FAEF0572D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{768FE796-ECFF-45CC-AFDC-045FAEF0572D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{768FE796-ECFF-45CC-AFDC-045FAEF0572D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -195,6 +207,8 @@ Global
 		{25383714-6692-41CA-9D27-744B8E0353D4} = {1E9160FF-DA6F-40A5-983A-4446BDDC3D12}
 		{B499A20A-EA47-4965-B76C-4048BC47CA7A} = {25383714-6692-41CA-9D27-744B8E0353D4}
 		{433C92BD-FB53-4DB7-8188-240991F07979} = {25383714-6692-41CA-9D27-744B8E0353D4}
+		{DD2D1446-5E9D-42B5-943F-B38B24EB9237} = {3515477D-4DA9-4F5D-B237-C78A9E27F856}
+		{768FE796-ECFF-45CC-AFDC-045FAEF0572D} = {3515477D-4DA9-4F5D-B237-C78A9E27F856}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {283376F5-2404-4A5C-A841-483D40051866}
