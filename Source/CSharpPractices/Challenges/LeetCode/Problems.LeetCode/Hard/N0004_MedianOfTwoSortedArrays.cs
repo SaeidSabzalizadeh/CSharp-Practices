@@ -6,7 +6,7 @@
     /// 
     /// https://leetcode.com/problems/median-of-two-sorted-arrays/
     /// </summary>
-    public class MedianOfTwoSortedArrays
+    public class N0004_MedianOfTwoSortedArrays
     {
         public static double FindMedianSortedArraysFinal(int[] nums1, int[] nums2)
         {

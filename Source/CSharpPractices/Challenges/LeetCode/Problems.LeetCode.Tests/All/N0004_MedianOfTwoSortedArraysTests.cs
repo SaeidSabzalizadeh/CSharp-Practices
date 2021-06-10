@@ -3,7 +3,7 @@ using Xunit;
 
 namespace Problems.LeetCode.Tests.All
 {
-    public class MedianOfTwoSortedArraysTests
+    public class N0004_MedianOfTwoSortedArraysTests
     {
         [Theory]
         [InlineData("[1,3]", "[2]", 2)]
@@ -20,7 +20,7 @@ namespace Problems.LeetCode.Tests.All
             int[] nums1 = Helper.GetArray(array1Str);
             int[] nums2 = Helper.GetArray(array2Str);
 
-           double result =  MedianOfTwoSortedArrays.FindMedianSortedArraysFinal(nums1, nums2);
+           double result =  N0004_MedianOfTwoSortedArrays.FindMedianSortedArraysFinal(nums1, nums2);
 
             Assert.True(result == expectedResult, $"result is not as expected. Actual: {result} - Expected: {expectedResult}");
 

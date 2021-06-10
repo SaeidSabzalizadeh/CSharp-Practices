@@ -4,7 +4,7 @@ using Xunit;
 
 namespace Problems.LeetCode.Tests.All
 {
-    public class AddTwoNumbersTests
+    public class N0002_AddTwoNumbersTests
     {
 
         [Theory]
@@ -21,7 +21,7 @@ namespace Problems.LeetCode.Tests.All
             int[] expectedValues = Helper.GetArray(arrayExpectedStr);
             ListNode expectedResult = ListNode.GetListNode(expectedValues);
 
-            ListNode result = AddTwoNumbers.Solution(l1, l2);
+            ListNode result = N0002_AddTwoNumbers.Solution(l1, l2);
 
             bool isExpected = result.EqualsToValues(expectedValues);
 

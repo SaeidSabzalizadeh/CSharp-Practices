@@ -9,7 +9,7 @@ namespace Problems.LeetCode.Medium
     /// 
     /// https://leetcode.com/problems/add-two-numbers/
     /// </summary>
-    public class AddTwoNumbers
+    public class N0002_AddTwoNumbers
     {
 
         public static ListNode Solution(ListNode l1, ListNode l2)
