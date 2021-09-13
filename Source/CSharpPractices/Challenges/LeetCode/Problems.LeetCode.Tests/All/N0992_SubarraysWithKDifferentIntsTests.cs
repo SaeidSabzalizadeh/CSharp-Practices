@@ -1,4 +1,6 @@
 ﻿using Problems.LeetCode.Hard;
+using System.Collections.Generic;
+using System.Linq;
 using Xunit;
 
 namespace Problems.LeetCode.Tests.All
@@ -16,6 +18,31 @@ namespace Problems.LeetCode.Tests.All
             Assert.True(result == expectedResult, $"result is not as expected. Actual: {result} - Expected: {expectedResult}");
 
         }
+
+
+        [Theory]
+        [InlineData("[3,7,1,2]", 2)]
+        public void Test2(string arrayStr, long expectedResult)
+        {
+            int[] nums = Helper.GetArray(arrayStr);
+            long result = N0992_SubarraysWithKDifferentInts.howManySwaps(nums.ToList());
+
+            Assert.True(result == expectedResult, $"result is not as expected. Actual: {result} - Expected: {expectedResult}");
+
+        }
+
+        //[Theory]
+        //[InlineData("*|*|*|", "[")]
+        //public void Test3(string arrayStr, long expectedResult)
+        //{
+        //    List<int> result = N0992_SubarraysWithKDifferentInts.numberOfItems("|**|*|*", new List<int>() {1,1 }, new List<int> { 5,6});
+
+        //    Assert.True(result.Count == 2, $"result is not as expected. Actual: {result} - Expected: {expectedResult}");
+
+
+
+
+        //}
 
     }
 }

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Problems.LeetCode.Hard
 {
@@ -205,7 +207,7 @@ namespace Problems.LeetCode.Hard
 
         private static bool ContainsInSubstring(int index, int[] substrings, int[] nums, int firstIndex, int lastIndex)
         {
-           
+
             int value = -1;
 
             if (firstIndex == 0)
@@ -355,6 +357,90 @@ namespace Problems.LeetCode.Hard
             return result;
 
 
+        }
+
+
+        public static List<int> numberOfItems(string s, List<int> startIndices, List<int> endIndices)
+        {
+            int[] results = new int[startIndices.Count];
+            int start = -1;
+            int end = -1;
+
+            for (int i = 0; i < startIndices.Count; ++i)
+            {
+                start = startIndices[i];
+                end = endIndices[i];
+                results[i] = GetNumber(s, start, end);
+
+            }
+
+
+            return results.ToList();
+
+        }
+
+        private static int GetNumber(string str, int start, int end)
+        {
+
+            int startIndex = str.IndexOf('|', start - 1);
+            if (startIndex < 0 || startIndex > end - 1)
+                return 0;
+
+            int endIndex = -1;
+
+            int starsCount = 0;
+
+            while (startIndex >= start - 1 && startIndex < endIndex && endIndex < end)
+            {
+                endIndex = str.IndexOf('|', startIndex + 1);
+                if (endIndex < startIndex)
+                {
+                    startIndex = -1;
+                }
+                else
+                {
+                    starsCount += endIndex - startIndex - 1;
+                    startIndex = endIndex;
+                }
+
+
+            }
+
+            return starsCount;
+
+
+        }
+        public static long howManySwaps(List<int> arr)
+        {
+
+            long swaps = 0;
+            int count = arr.Count;
+            int middle = (count / 2);
+
+
+            for (int n = 0; n < middle; ++n)
+            {
+                for (int i = n; i < middle; ++i)
+                {
+                    if (arr[i] > arr[count - i - 1])
+                    {
+                        swap(i, count - i - 1, arr);
+                        swaps++;
+                    }
+
+                }
+            }
+
+            return swaps;
+        }
+
+
+
+        private static void swap(int i, int j, List<int> arr)
+        {
+            int temp = arr[j];
+            arr[j] = arr[i];
+            arr[i] = temp;
         }
     }
 }
