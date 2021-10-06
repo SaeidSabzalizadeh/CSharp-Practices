@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Problems.LeetCode.Tests
 {
@@ -20,6 +22,9 @@ namespace Problems.LeetCode.Tests
             if (numbers == null)
                 return null;
 
+            if (numbers.Length == 0)
+                return null;
+
             if (string.IsNullOrEmpty(numbers[0]))
                 return null;
 
@@ -37,6 +42,18 @@ namespace Problems.LeetCode.Tests
 
             return array;
 
+
+        }
+
+        internal static string ToString(IEnumerable<int> result)
+        {
+            if (result == null)
+                return null;
+
+            if (!result.Any())
+                return null;
+
+            return $"[{string.Join(',', result)}]";
 
         }
     }
