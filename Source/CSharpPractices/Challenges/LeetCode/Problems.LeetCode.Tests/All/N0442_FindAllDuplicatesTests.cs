@@ -13,8 +13,8 @@ namespace Problems.LeetCode.Tests.All
         [InlineData("[1]", "[]")]
         public void Test1(string arrayStr, string expectedResultArrayStr)
         {
-            int[] nums = Helper.GetArray(arrayStr);
-            int[] expectedResult = Helper.GetArray(expectedResultArrayStr);
+            int[] nums = Helper.GetIntArray(arrayStr);
+            int[] expectedResult = Helper.GetIntArray(expectedResultArrayStr);
 
             List<int> result = N0442_FindAllDuplicates.Solution(nums)?.ToList();
             if (result.Any() != true)

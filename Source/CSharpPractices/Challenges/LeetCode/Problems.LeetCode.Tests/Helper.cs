@@ -6,7 +6,36 @@ namespace Problems.LeetCode.Tests
 {
     public class Helper
     {
-        public static int[] GetArray(string str)
+        internal static List<string> GetStringArray(string str)
+        {
+            if (string.IsNullOrEmpty(str))
+                return null;
+
+            str = str.Trim();
+
+            if (str[0] != '[')
+                throw new Exception("Invalid array format expected starts with '['");
+
+            if (str[str.Length - 1] != ']')
+                throw new Exception("Invalid array format expected ends with ']'");
+
+            str = str.Substring(1, str.Length - 2);
+            str = str.Trim();
+
+            List<string> strings = new List<string>();
+
+            string nextItem = GetNextItem(str, out str);
+
+            while (nextItem != null)
+            {
+                strings.Add(nextItem);
+                nextItem = GetNextItem(str, out str);
+            }
+
+            return strings;
+        }
+
+        internal static int[] GetIntArray(string str)
         {
             if (string.IsNullOrEmpty(str))
                 return null;
@@ -56,5 +85,49 @@ namespace Problems.LeetCode.Tests
             return $"[{string.Join(',', result)}]";
 
         }
+
+        private static string GetNextItem(string inputStr, out string str)
+        {
+            str = inputStr;
+
+            if (string.IsNullOrEmpty(inputStr))
+                return null;
+
+            if (inputStr[0] != '\'')
+                throw new Exception("Invalid array format expected items starts with (')");
+
+            int lastIndex = inputStr.IndexOf("',", 1);
+
+            if (lastIndex <= 0)
+                lastIndex = inputStr.IndexOf("' ,", 1);
+
+            if (lastIndex <= 0)
+                lastIndex = inputStr.IndexOf("'  ,", 1);
+
+            if (lastIndex <= 0)
+            {
+                lastIndex = inputStr.IndexOf("'", 1);
+                if (lastIndex != inputStr.Length - 1)
+                    throw new Exception("Invalid array format expected items separated by ','");
+            }
+
+            if (lastIndex <= 0)
+                throw new Exception("Invalid array format expected items ends with (')");
+
+
+            if (lastIndex == inputStr.Length - 1)
+            {
+                str = null;
+            }
+            else
+            {
+                int endIndex = inputStr.IndexOf(',', lastIndex);
+                str = inputStr.Substring(endIndex + 1);
+            }
+
+
+            return inputStr.Substring(1, lastIndex - 1);
+        }
     }
 }
+

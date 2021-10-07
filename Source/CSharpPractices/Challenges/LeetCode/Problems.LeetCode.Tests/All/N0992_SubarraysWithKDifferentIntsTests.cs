@@ -12,7 +12,7 @@ namespace Problems.LeetCode.Tests.All
         [InlineData("[1,2,1,3,4]", 3, 3)]
         public void Test1(string arrayStr, int k, int expectedResult)
         {
-            int[] nums = Helper.GetArray(arrayStr);
+            int[] nums = Helper.GetIntArray(arrayStr);
             int result = N0992_SubarraysWithKDifferentInts.SubarraysWithKDistinct(nums, k);
 
             Assert.True(result == expectedResult, $"result is not as expected. Actual: {result} - Expected: {expectedResult}");
@@ -24,7 +24,7 @@ namespace Problems.LeetCode.Tests.All
         [InlineData("[3,7,1,2]", 2)]
         public void Test2(string arrayStr, long expectedResult)
         {
-            int[] nums = Helper.GetArray(arrayStr);
+            int[] nums = Helper.GetIntArray(arrayStr);
             long result = N0992_SubarraysWithKDifferentInts.howManySwaps(nums.ToList());
 
             Assert.True(result == expectedResult, $"result is not as expected. Actual: {result} - Expected: {expectedResult}");
