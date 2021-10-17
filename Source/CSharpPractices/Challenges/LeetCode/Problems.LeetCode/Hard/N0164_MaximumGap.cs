@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Problems.LeetCode.Hard
+﻿namespace Problems.LeetCode.Hard
 {
 
     /// <summary>

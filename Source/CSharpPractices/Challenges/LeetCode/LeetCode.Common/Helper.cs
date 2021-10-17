@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace Challenges.LeetCode.Common
+namespace LeetCode.Common
 {
     public class Helper
     {
@@ -59,6 +59,26 @@ namespace Challenges.LeetCode.Common
             GetLevels(node.left, levelValues, level + 1);
             GetLevels(node.right, levelValues, level + 1);
 
+        }
+
+        public static bool IsEqual(int[] firstArray, int[] secondArray)
+        {
+            if (firstArray == null && secondArray != null)
+                return false;
+
+            if (secondArray == null && firstArray != null)
+                return false;
+
+            if (firstArray.Length != secondArray.Length)
+                return false;
+
+            for (int i = 0; i < firstArray.Length; i++)
+            {
+                if (firstArray[i] != secondArray[i])
+                    return false;
+            }
+
+            return true;
         }
 
     }

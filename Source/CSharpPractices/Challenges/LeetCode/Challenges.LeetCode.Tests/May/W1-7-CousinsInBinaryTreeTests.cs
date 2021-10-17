@@ -1,4 +1,4 @@
-﻿using Challenges.LeetCode.Common;
+﻿using LeetCode.Common;
 using Challenges.LeetCode.May;
 using System;
 using System.Collections.Generic;

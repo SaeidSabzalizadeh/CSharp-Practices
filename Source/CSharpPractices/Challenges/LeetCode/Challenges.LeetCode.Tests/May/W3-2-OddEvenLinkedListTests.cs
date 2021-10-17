@@ -1,4 +1,4 @@
-﻿using Challenges.LeetCode.Common;
+﻿using LeetCode.Common;
 using Xunit;
 
 namespace Challenges.LeetCode.Tests.May

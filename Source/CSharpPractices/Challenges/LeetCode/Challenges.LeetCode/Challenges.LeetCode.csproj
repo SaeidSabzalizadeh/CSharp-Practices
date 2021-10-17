@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Helper\Helper.csproj" />
+    <ProjectReference Include="..\LeetCode.Common\LeetCode.Common.csproj" />
   </ItemGroup>
 
 </Project>

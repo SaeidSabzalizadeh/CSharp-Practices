@@ -6,6 +6,26 @@ namespace Problems.LeetCode.Tests
 {
     public class Helper
     {
+        internal static bool IsEqual(int[] firstArray, int[] secondArray)
+        {
+            if (firstArray == null && secondArray != null)
+                return false;
+
+            if (secondArray == null && firstArray != null)
+                return false;
+
+            if (firstArray.Length != secondArray.Length)
+                return false;
+
+            for (int i = 0; i < firstArray.Length; i++)
+            {
+                if (firstArray[i] != secondArray[i])
+                    return false;
+            }
+
+            return true;
+        }
+
         internal static List<string> GetStringArray(string str)
         {
             if (string.IsNullOrEmpty(str))
@@ -128,6 +148,8 @@ namespace Problems.LeetCode.Tests
 
             return inputStr.Substring(1, lastIndex - 1);
         }
+
+        
     }
 }
 

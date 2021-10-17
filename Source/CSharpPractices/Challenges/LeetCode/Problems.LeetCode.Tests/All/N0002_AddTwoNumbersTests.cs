@@ -1,4 +1,4 @@
-﻿using Problems.LeetCode.Common;
+﻿using LeetCode.Common;
 using Problems.LeetCode.Medium;
 using Xunit;
 

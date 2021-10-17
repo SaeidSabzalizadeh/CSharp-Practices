@@ -1,4 +1,4 @@
-﻿using Challenges.LeetCode.Common;
+﻿using LeetCode.Common;
 using System;
 
 namespace Challenges.LeetCode.May

@@ -1,4 +1,4 @@
-﻿using Problems.LeetCode.Common;
+﻿using LeetCode.Common;
 
 namespace Problems.LeetCode.Medium
 {

@@ -1,13 +1,14 @@
-﻿using System.Text;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
-namespace Problems.LeetCode.Common
+namespace LeetCode.Common
 {
-
-    //Definition for singly-linked list.
     public class ListNode
     {
         public int val;
         public ListNode next;
+
         public ListNode(int val = 0, ListNode next = null)
         {
             this.val = val;
@@ -82,6 +83,42 @@ namespace Problems.LeetCode.Common
 
 
         }
-    }
 
+        public static ListNode Convert(string inputStr)
+        {
+            if (string.IsNullOrEmpty(inputStr))
+                return null;
+
+            List<string> strItems = inputStr.Replace("->", ",").Split(',').ToList();
+
+            if (strItems == null || strItems.Count == 0)
+                return null;
+
+            ListNode node = null;
+            ListNode head = null;
+
+            int parsedValue;
+
+            for (int i = 0; i < strItems.Count; i++)
+            {
+
+                if (!int.TryParse(strItems[i], out parsedValue))
+                    break;
+
+                if (i == 0)
+                {
+                    head = new ListNode(parsedValue);
+                    node = head;
+                }
+                else
+                {
+                    node.next = new ListNode(parsedValue);
+                    node = node.next;
+                }
+
+            }
+
+            return head;
+        }
+    }
 }
