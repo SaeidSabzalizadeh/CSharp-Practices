@@ -6,7 +6,7 @@ namespace Visualize
     class Program
     {
 
-       
+
 
 
         static async Task Main(string[] args)
@@ -66,7 +66,7 @@ namespace Visualize
             //Challenges.Library.IncreasingSubsequence.Run();
             //Challenges.Library.ReadWebRequest.Run();
             //Challenges.Library.LongestIncreasingSubsequence.Run();
-            Challenges.Library.Sorts.ArraySortings.Run();
+            //Challenges.Library.Sorts.ArraySortings.Run();
             //Challenges.LeetCode.May.JewelsAndStones.Run();
             //Challenges.LeetCode.May.RansomNote.Run();
             //Challenges.LeetCode.May.NumberComplement.Run();
@@ -94,7 +94,7 @@ namespace Visualize
             //DesignPatternsLibrary.Observer.EntryPoint.Main(args);
 
 
-
+            Problems.LeetCode.Easy.N0821_ShortestDistanceToChar.Run();
 
 
 

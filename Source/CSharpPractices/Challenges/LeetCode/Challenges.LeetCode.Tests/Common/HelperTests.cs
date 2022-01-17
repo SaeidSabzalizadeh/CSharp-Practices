@@ -20,7 +20,7 @@ namespace Challenges.LeetCode.Tests.Common
             node.right.left = null;
             node.right.right = new TreeNode(12);
 
-            string result = LeetCode.Common.Helper.ToString(node);
+            string result = Tools.ToString(node);
             string expectedResult = "[8,5,10,1,7,null,12]";
             Assert.True(result == expectedResult, $"ToStringTreeNode does not meet the expected. Solution result is '{result}' but expected is '{expectedResult}'.");
         }

@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace LeetCode.Common
 {
-    public class Helper
+    public class Tools
     {
         public static string ToString(TreeNode node)
         {

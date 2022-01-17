@@ -38,7 +38,7 @@ namespace Challenges.LeetCode.May
 
 
             TreeNode node = BstFromPreorder(new int[] { 8, 5, 1, 7, 10, 12 });
-            string str = Common.Helper.ToString(node);
+            //string str = Common.Helper.ToString(node);
             Console.ReadLine();
 
         }
