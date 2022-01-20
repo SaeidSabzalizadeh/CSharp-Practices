@@ -1,7 +1,7 @@
 ﻿using Problems.LeetCode.Hard;
 using Xunit;
 
-namespace Problems.LeetCode.Tests.All
+namespace Problems.LeetCode.Tests.Hard
 {
     public class N0004_MedianOfTwoSortedArraysTests
     {

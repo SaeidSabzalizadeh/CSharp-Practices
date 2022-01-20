@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Xunit;
 
-namespace Problems.LeetCode.Tests.All
+namespace Problems.LeetCode.Tests.Hard
 {
     public class N0992_SubarraysWithKDifferentIntsTests
     {

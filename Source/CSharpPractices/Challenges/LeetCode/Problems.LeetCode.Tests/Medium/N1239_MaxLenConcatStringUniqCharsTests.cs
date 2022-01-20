@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Xunit;
 
-namespace Problems.LeetCode.Tests.All
+namespace Problems.LeetCode.Tests.Medium
 {
     public class N1239_MaxLenConcatStringUniqCharsTests
     {

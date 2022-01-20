@@ -1,7 +1,7 @@
 ﻿using Problems.LeetCode.Easy;
 using Xunit;
 
-namespace Problems.LeetCode.Tests.All
+namespace Problems.LeetCode.Tests.Easy
 {
     public class N0290_WordPatternTests
     {

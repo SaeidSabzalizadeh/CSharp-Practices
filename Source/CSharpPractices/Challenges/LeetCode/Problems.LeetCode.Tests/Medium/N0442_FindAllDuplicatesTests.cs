@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Xunit;
 
-namespace Problems.LeetCode.Tests.All
+namespace Problems.LeetCode.Tests.Medium
 {
     public class N0442_FindAllDuplicatesTests
     {

@@ -1,10 +1,7 @@
 ﻿using Problems.LeetCode.Hard;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Xunit;
 
-namespace Problems.LeetCode.Tests.All
+namespace Problems.LeetCode.Tests.Hard
 {
     public class N0003_LongestSubWithoutRepCharsTests
     {

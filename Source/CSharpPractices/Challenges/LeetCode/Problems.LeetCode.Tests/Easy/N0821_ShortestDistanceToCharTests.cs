@@ -1,12 +1,7 @@
 ﻿using Problems.LeetCode.Easy;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
-namespace Problems.LeetCode.Tests.All
+namespace Problems.LeetCode.Tests.Easy
 {
     public class N0821_ShortestDistanceToCharTests
     {

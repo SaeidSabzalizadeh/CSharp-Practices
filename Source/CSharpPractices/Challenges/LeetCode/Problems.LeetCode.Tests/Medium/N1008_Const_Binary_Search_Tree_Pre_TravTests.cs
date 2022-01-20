@@ -2,7 +2,7 @@
 using Problems.LeetCode.Medium;
 using Xunit;
 
-namespace Problems.LeetCode.Tests.All
+namespace Problems.LeetCode.Tests.Medium
 {
     public class N1008_Const_Binary_Search_Tree_Pre_TravTests
     {
