@@ -94,7 +94,7 @@ namespace Visualize
             //DesignPatternsLibrary.Observer.EntryPoint.Main(args);
 
 
-            Problems.LeetCode.Easy.N0821_ShortestDistanceToChar.Run();
+            Problems.LeetCode.Medium.N0875_KokoEatingBananas.Run();
 
 
 
