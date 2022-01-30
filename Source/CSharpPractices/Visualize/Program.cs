@@ -5,13 +5,11 @@ namespace Visualize
 {
     class Program
     {
-
-
-
-
         static async Task Main(string[] args)
         {
             Console.WriteLine();
+
+            Test();
 
             //MultiThreading.Threads.ContextSwitching.Run();
             //MultiThreading.Threads.SharedResource.Run();
@@ -110,5 +108,33 @@ namespace Visualize
 
             Console.ReadLine();
         }
+
+        private static void Test()
+        {
+            FER[] fors = new FER[26];    
+
+            for (int i = 0; i < fors.Length; i++)
+            {
+                DOJOB(fors[i]);
+            }
+        }
+
+        private static void DOJOB(FER fER)
+        {
+            if(fER == null)
+                fER = new FER();
+
+            fER.Key = 'd';
+        }
+
+
+        public class FER
+        {
+            public char Key { get; set; }
+
+        }
+
+
+
     }
 }

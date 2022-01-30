@@ -82,7 +82,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeetCode.Common", "Challeng
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Other", "Other", "{C3A6CF17-B007-4EB5-AEB5-27F139282162}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenges.Other.Tests", "Challenges\Other\Challenges.Other.Tests\Challenges.Other.Tests.csproj", "{861A0711-CFCF-4023-9BDD-81E3CC162114}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenges.Other.Tests", "Challenges\Other\Challenges.Other.Tests\Challenges.Other.Tests.csproj", "{861A0711-CFCF-4023-9BDD-81E3CC162114}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenges.Other", "Challenges\Other\Challenges.Other\Challenges.Other.csproj", "{A9549DFA-5ED9-47F7-9528-11665B8D61B2}"
 EndProject
