@@ -9,6 +9,7 @@
     <ProjectReference Include="..\Challenges\Challenges.Library\Challenges.Library.csproj" />
     <ProjectReference Include="..\Challenges\LeetCode\Challenges.LeetCode\Challenges.LeetCode.csproj" />
     <ProjectReference Include="..\Challenges\LeetCode\Problems.LeetCode\Problems.LeetCode.csproj" />
+    <ProjectReference Include="..\Challenges\Other\Challenges.Other\Challenges.Other.csproj" />
     <ProjectReference Include="..\CSharp\CSharp.csproj" />
     <ProjectReference Include="..\Design Patterns\DesignPatternsLibrary\DesignPatternsLibrary.csproj" />
     <ProjectReference Include="..\MultiThreading\MultiThreading.csproj" />

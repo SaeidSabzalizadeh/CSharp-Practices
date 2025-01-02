@@ -9,7 +9,7 @@ namespace Visualize
         {
             Console.WriteLine();
 
-            Test();
+            //Test();
 
             //MultiThreading.Threads.ContextSwitching.Run();
             //MultiThreading.Threads.SharedResource.Run();
@@ -92,7 +92,9 @@ namespace Visualize
             //DesignPatternsLibrary.Observer.EntryPoint.Main(args);
 
 
-            Problems.LeetCode.Medium.N0875_KokoEatingBananas.Run();
+            //Problems.LeetCode.Medium.N1442_CountTriplesOfTwoArraysEqualXOR.Run();
+            
+            Challenges.Other.AZ_Preparation01.Test(args);
 
 
 
